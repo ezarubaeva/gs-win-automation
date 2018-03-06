@@ -1,0 +1,17 @@
+Test summary for tests started from Tue Feb 20 14:42:36 MSK 2018
+=================================================
+Test set: GoodSync Connect Setup
+----------------------------------------
+Name: GoodSync Connect Test   Result: ++PASSED++   Time elapsed: 0:00:05
+----------------------------------------
+Total passed: 1
+Total failed: 0
+Total tests: 1
+Total time elapsed: 0:00:05
+----------------------------------------
+=================================================
+Total passed: 1
+Total failed: 0
+Total tests: 1
+Total time elapsed: 0:00:05
+=================================================
