@@ -256,7 +256,7 @@ public class TestLogger {
         System.out.println("Sending results to WebDAV server");
         try{
             Sardine sardine  = SardineFactory.begin();
-            sardine.put("http://test:1@192.168.1.214/webdav/rf-win-test-results/" + filename,file,"text/html");
+            sardine.put("http://test:1@192.168.1.214/webdav/gs-win-test-results/" + filename,file,"text/html");
             System.out.println("Results are sent successfully");
 //            sendHTMLReportLinkToEmail(logg,filename,"agolov@siber.com","evtitova@siber.com","dendav@siber.com");
             sendHTMLReportLinkToEmail(logg,filename);
@@ -293,12 +293,12 @@ public class TestLogger {
             message.setSubject("Test report: " + startDate.toString());
 
 /*            if (RunAllTests.isOfficial()){
-                message.setText("Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/rf-win-test-results/" + _reportName);
+                message.setText("Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/gs-win-test-results/" + _reportName);
             } else {
-                message.setText("Build: " + testVersion + " Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/rf-win-test-results/" + _reportName);
+                message.setText("Build: " + testVersion + " Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/gs-win-test-results/" + _reportName);
             }*/
             //another thing related to build version, placing 'official' part here:
-            message.setText("Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/rf-win-test-results/" + _reportName);
+            message.setText("Result: " + nPassed + " of " + nTotal + " PASSED; more info at: http://test:1@192.168.1.214/gs-win-test-results/" + _reportName);
 
 
             Transport.send(message);
