@@ -1,213 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_lookfirst_sardine_5_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="03/20/2018 Added Maven support. Moved JNA, javax.mail and other dependencies to maven.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Win Automation.iml" afterPath="$PROJECT_DIR$/Win Automation.iml" />
-      <change beforePath="$PROJECT_DIR$/src/Tools/BrowseDialog.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Tools/Elem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Tools/GSWin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Tools/TopMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/daima/DElement.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/daima/KeyboardHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/daima/MouseHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/daima/WindowHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/daima/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/RFWin/ApplicationProc.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/RFWin/Proc.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/RFWin/SeleniumProc.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Run/CreateFSAccounts.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Run/GoodSyncConnect.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Run/RunAllTests.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Run/RunInstaller.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Run/RunnerMother.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Tests/GoodSyncConnect/GoodSyncConnectTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/jnaex/Tests/Utils/AmazonWorkspacesTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/AutomationElement.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/AutomationEventHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/AutomationException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/AutomationTreeWalker.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/BaseAutomation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/ControlType.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/ElementNotFoundException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/EventID.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/ItemNotFoundException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/Ole32Wrapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/PatternID.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/PropertyID.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/UIAutomation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Automatable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationAppBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationApplication.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationBase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationButton.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationCalendar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationCheckBox.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationComboBox.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationContainer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationControlFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationCustom.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationDataGrid.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationDataGridCell.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationDocument.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationDocumentPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationEditBox.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationHyperlink.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationImage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationList.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationListItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationMaskedEdit.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationNUIPane.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationNetUIHWND.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationPanel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationPasswordEditBox.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationPowerpointSlide.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationProgressBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationRadioButton.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationReBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationRibbonBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationRibbonCommandBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationRibbonWorkPane.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationSlider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationSpinner.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationSplitButton.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationStatusBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTab.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTabItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTextBox.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTitleBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationToolBar.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationToolBarButton.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTreeView.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationTreeViewItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/AutomationWindow.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Clickable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Expandable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Focusable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Selectable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Toggleable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/Valueable.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/menu/AutomationMainMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/menu/AutomationMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/menu/AutomationMenuItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/menu/AutomationSystemMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/controls/mouse/AutomationMouse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/BasePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/ExpandCollapse.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Grid.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/GridItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Invoke.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/ItemContainer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Pattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/PatternNotFoundException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Range.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Selection.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/SelectionItem.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Styles.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Table.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Text.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Toggle.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Value.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/pattern/Window.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/structure/PointNativeLong.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/ExpandCollapseState.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomation.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomation2.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomation3.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationCondition.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationConditionConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElement.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElement3.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElement3Converter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElementArray.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElementArrayConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationElementConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationEventHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationExpandCollapsePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationExpandCollapsePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationGridItemPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationGridItemPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationGridPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationGridPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationInvokePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationInvokePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationItemContainerPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationRangeValuePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationRangeValuePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationSelectionItemPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationSelectionItemPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationSelectionPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationSelectionPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationStylesPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationStylesPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTablePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTablePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextRange.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextRangeArray.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextRangeArrayConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTextRangeConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTogglePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTogglePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTreeWalker.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationTreeWalkerConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationValuePattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationValuePatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationWindowPattern.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/IUIAutomationWindowPatternConverter.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/OrientationType.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/RowOrColumnMajor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/ToggleState.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/TreeScope.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/uiautomation/WindowVisualState.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/utils/Canalizer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/utils/Utils.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/automation/utils/providers/PatternProvider.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/DemoEventHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/DemoGrid.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/DemoPointOver.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/DemoTreeWalker.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/EventHandler.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/Explorer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/Main.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainGrid.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainPowerpoint.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainWPF.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainWPFAutomationId.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/MainWord.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/Notepad.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/PointerOver.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestBase.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestExplorer.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMain.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMainExcel.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMainPowerpoint.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMainWPF.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMainWPFAutomationId.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestMainWord.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TestNotepad.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mmarquee/demo/TreeWalker.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/mock/Logger.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/testLogger/ITest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/testLogger/Test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/testLogger/TestLogger.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/testLogger/TestSet.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -310,7 +106,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
+            <state relative-caret-position="665">
               <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
@@ -350,6 +146,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="ezarubaeva" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="gs-win-automation" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -622,6 +423,14 @@
       <option name="presentableId" value="Default" />
       <updated>1510222601914</updated>
     </task>
+    <task id="LOCAL-00001" summary="03/20/2018 Added Maven support. Moved JNA, javax.mail and other dependencies to maven.">
+      <created>1521561169792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521561169792</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1028,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
+        <state relative-caret-position="665">
           <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
