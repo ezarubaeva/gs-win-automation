@@ -20,6 +20,6 @@ public class Elem {
         KeyboardHandler.sendKeysHere(true,"%n");
         KeyboardHandler.sendKeysHere(true, fileSystem);
         KeyboardHandler.sendKeysHere(true, "{ENTER}");
-        BrowseDialog.selectLeftFolder("folder");
+        BrowseDialog.selectLeftFolder("folder", "");
     }
 }

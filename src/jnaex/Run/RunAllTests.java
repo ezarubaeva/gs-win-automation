@@ -23,6 +23,10 @@ public class RunAllTests {
         TestLogger.addTestSet(inst1);
         GoodSyncConnect.main(inst1, args);
 
+//        TestSet file_systems = new TestSet("Create FS Accounts");
+//        TestLogger.addTestSet(file_systems);
+//        CreateFSAccounts.main(file_systems, args);
+
         TestLogger.stopLogging();
 //        TestLogger.writeLogs(); //to keep locally
         TestLogger.writeLogsHTML(); //to send on server

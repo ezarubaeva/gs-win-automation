@@ -6,7 +6,7 @@ import testLogger.TestSet;
 
 
 /**
- * Created by Evgenia on 30-May-17.
+ * Created by E.Zarubaeva on 2018-03-16
  */
 public class GoodSyncConnect extends RunnerMother{
 
