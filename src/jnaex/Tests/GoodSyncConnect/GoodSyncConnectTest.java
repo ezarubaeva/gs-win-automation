@@ -53,11 +53,33 @@ public class GoodSyncConnectTest implements ITest{
         callSetup();
         chooseMode ("no");
         sleep (1);
+        clickNext ();
+        DElement gsW = g(null,"GoodSync Connect Setup window",2,"ln","window", "GoodSync Connect Setup");
+        DElement wrk = g(gsW, "Button Apply", 1, "n", "Apply");
+        wrk.click();
+        wrk = g(gsW, "Text - Local Only", 6, "ln", "text", "Local Only mode");
+        wrk = g(gsW, "Button Apply", 1, "n", "Apply");
+        wrk.click();
+    }
+    public static void clickNext () {
+        DElement gsW = null;
+        try {
+            gsW = g(null,"GoodSync Connect Setup window",2,"ln","window", "GoodSync Connect Setup");
+            DElement wrk = g(gsW, "Button Next", 1, "n", "Next >");
+            wrk.click();
+            sleep (1);
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
     }
 
     public static void setupExistingAccount () throws Exception {
         callSetup();
         chooseMode ("yes");
+        clickNext ();
+        DElement gsW = g(null,"GoodSync Connect Setup window",2,"ln","window", "GoodSync Connect Setup");
+        DElement wrk = g(gsW, "Text - UserId or Email", 2, "n", "UserId or Email");
+        wrk.setEditValue ("testbot");
         sleep (1);
     }
 
@@ -89,9 +111,9 @@ public class GoodSyncConnectTest implements ITest{
     public static void callSetup () throws Exception {
         DElement gsW = g(null,"GoodSync main window",1,"N","GoodSync - All Jobs");
         gsW.setForeground();
-        DElement toolbar = g(gsW,"Main tool bar",1,"N","");
-        DElement submenu = g(toolbar,"Tools menu item",1,"n","Tools");
-        submenu.click();
+        DElement toolbar = g(gsW,"Main tool bar",1,"l","tool bar");
+        DElement menuItem = g(toolbar,"Tools menu item",1,"n","Tools");
+        menuItem.click();
         DElement wrk = g(null,"Name",1,"n","Context");
         wrk = g (wrk, "Tools > GoodSync Connect Setup menu item", 1, "n", new String[]{"GoodSync Connect Setup..."});
         wrk.click();
