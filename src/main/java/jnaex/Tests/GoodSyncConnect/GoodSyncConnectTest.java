@@ -11,7 +11,7 @@ import static Tools.Elem.g;
 import static Tools.Elem.sleep;
 
 /**
- * Created by Autotester on 12/13/2017.
+ * Created by E.Zarubaeva on 03/21/2017.
  */
 public class GoodSyncConnectTest implements ITest {
     private void sleepy(double s) {  //in seconds
@@ -40,8 +40,10 @@ public class GoodSyncConnectTest implements ITest {
             Proc.setGLP ( "GoodSync" );
             Proc.lgP = "Connect Test";
 
-            setupLocal ();
-            setupExistingAccount ( "", "test" );
+            //setupLocal ();
+            //setupExistingAccount ( "", "test" );
+            setupNewAccount ( "", "test" );
+            //verifyServerMode ("gs_qa721", "gs_qa721@siber.com");
 
             log ( "Test was completed without fatal exceptions" );
         } catch (Exception e) {
@@ -56,11 +58,11 @@ public class GoodSyncConnectTest implements ITest {
             callSetup ();
             chooseMode ( "no" );
             sleep ( 1 );
-            DElement gsW = g ( null, "GoodSync Connect Setup window", 2, "ln", "window", "GoodSync Connect Setup" );
+            DElement gsW = g ( null, "setupLocal: GoodSync Connect Setup window", 2, "ln", "window", "GoodSync Connect Setup" );
             DElement wrk = g ( gsW, "Text: Local Only mode", 2, "lN", "text", "Local Only mode" );
             clickApply (gsW);
             wrk = g ( gsW, "Text: Committing", 10, "UlN", "100", "text", "Committing" );
-            DElement.gimMeP ( null, "GoodSync Connect Setup", 4, "Dn", "GoodSync Connect Setup" );
+            DElement.gimMeP ( null, "setupLocal: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
         } catch (Exception e) {
         }
     }
@@ -69,11 +71,12 @@ public class GoodSyncConnectTest implements ITest {
         try {
             callSetup ();
             chooseMode ( "yes" );
-            DElement gsW = g ( null, "GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            DElement gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
             configureGSAccount ( "testbot", "testbot" );
+
             // Do not change windows user for now
             //wrk.setEditValue (windowsUser);
-            DElement wrk = g ( gsW, "Windows Password", 3, "lN", "edit", "Windows Password" );
+            DElement wrk = g ( gsW, "Edit: Windows Password", 3, "lN", "edit", "Windows Password" );
             wrk.setEditValue ( windowsPassword );
             clickNext (gsW);
 
@@ -82,35 +85,42 @@ public class GoodSyncConnectTest implements ITest {
         }
     }
 
-    public void setupNewAccount() throws Exception {
+    public void setupNewAccount(String windowsUser, String windowsPassword) throws Exception {
         callSetup ();
         chooseMode ( "yes" );
         sleep ( 1 );
-        DElement gsW = g ( null, "GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+        DElement gsW = g ( null, "setupNewAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
         DElement wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Create a new GoodSync Connect Account" );
         wrk.click ();
 
         Random rn = new Random ();
         int tail = rn.nextInt ( 1000 );
         String gsUser = "testbot" + tail;
-        String gsEmail = "gs_qa" + tail + "siber.com";
+        String gsEmail = "gs_qa" + tail + "@siber.com";
 
-        wrk = g ( gsW, "GS Account Email", 2, "ln", "edit", "Email" );
+        wrk = g ( gsW, "GS Account Email = "+ gsEmail , 2, "ln", "edit", "Email" );
         wrk.setEditValue ( gsEmail );
-        wrk = g ( gsW, "GS Account Email", 2, "ln", "edit", "Password" );
+        wrk = g ( gsW, "GS Account Password = testbot", 1, "ln", "edit", "Password" );
         wrk.setEditValue ( "testbot" );
-        wrk = g ( gsW, "GS Account Email", 2, "ln", "edit", "Retype" );
+        wrk = g ( gsW, "GS Account Retype", 1, "ln", "edit", "Retype" );
         wrk.setEditValue ( "testbot" );
-        wrk = g ( gsW, "GS Account Email", 2, "ln", "edit", "Your Name" );
+        wrk = g ( gsW, "GS Account Email = " + gsUser, 1, "ln", "edit", "Your Name" );
         wrk.setEditValue ( gsUser );
 
         clickNext (gsW);
 
+        // Do not change windows user for now
+        //wrk.setEditValue (windowsUser);
+        wrk = g ( gsW, "Edit: Windows Password", 3, "lN", "edit", "Windows Password" );
+        wrk.setEditValue ( windowsPassword );
+        clickNext (gsW);
+
+        sleep (1);
+        verifyServerMode("gs_qa" + tail, gsEmail);
     }
 
     public void clickNext(DElement gsW) {
         try {
-        //    gsW = g ( null, "GoodSync Connect Setup window", 2, "ln", "window", "GoodSync Connect Setup" );
             DElement wrk = g ( gsW, "Clicking Button Next", 1, "ln", "button", "Next >" );
             wrk.click ();
             sleep ( 1 );
@@ -122,8 +132,7 @@ public class GoodSyncConnectTest implements ITest {
     public void clickApply(DElement gsW) {
         //DElement gsW = null;
         try {
-            //gsW = g ( null, "GoodSync Connect Setup window", 2, "ln", "window", "GoodSync Connect Setup" );
-            DElement wrk = g ( gsW, "Clicking Button Next", 1, "ln", "button", "Apply" );
+            DElement wrk = g ( gsW, "Clicking Button Apply", 1, "ln", "button", "Apply" );
             wrk.click ();
             sleep ( 1 );
         } catch (Exception e) {
@@ -132,9 +141,7 @@ public class GoodSyncConnectTest implements ITest {
     }
 
     public void chooseMode(String mode) throws Exception {
-        DElement gsW = g ( null, "GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
-        //DElement gsW = g(null,"GoodSync Connect Setup window",3,"lc", "window", "#32770");
-
+        DElement gsW = g ( null, "chooseMode: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
         DElement wrk;
         if (mode.equals ( "yes" )) {
             wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
@@ -143,52 +150,63 @@ public class GoodSyncConnectTest implements ITest {
         }
 
         wrk.click ();
-        //wrk = g (gsW, "Choose mode: Button Next", 1, "ln", "button", "Next >");
-        //wrk.click();
         clickNext (gsW);
     }
 
     public void callSetup() throws Exception {
-        DElement gsW = g ( null, "GoodSync main window", 1, "lN", "window", "GoodSync - All Jobs" );
-        gsW.setForeground ();
-        DElement toolbar = g ( gsW, "Main tool bar", 1, "l", "tool bar" );
-        DElement menuItem = g ( toolbar, "Tools menu item", 1, "n", "Tools" );
-        menuItem.click ();
-        DElement wrk = g ( null, "Name", 1, "n", "Context" );
-        wrk = g ( wrk, "Tools > GoodSync Connect Setup menu item", 1, "n", "GoodSync Connect Setup..." );
-        wrk.click ();
-        sleep ( 1 );
+        try {
+            DElement gsW = g ( null, "callSetup: GoodSync main window", 1, "lN", "window", "GoodSync - All Jobs" );
+            gsW.setForeground ();
+            DElement toolbar = g ( gsW, "Main tool bar", 1, "l", "tool bar" );
+            DElement menuItem = g ( toolbar, "Tools menu item", 1, "n", "Tools" );
+            menuItem.click ();
+            DElement wrk = g ( null, "Name", 1, "n", "Context" );
+            wrk = g ( wrk, "Tools > GoodSync Connect Setup menu item", 1, "n", "GoodSync Connect Setup..." );
+            wrk.click ();
+            sleep ( 1 );
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
     }
 
     public void verifyServerMode(String gsUser, String gsEmail) throws Exception {
-        DElement gsW = g ( null, "GoodSync main window", 1, "lN", "window", "GoodSync Connect Setup" );
-        DElement wrk = g ( gsW, "Result text", 1, "lN", "text", "GoodSync Connect: Server Mode" );
+        try {
+            DElement gsW = g ( null, "verifyServerMode: GoodSync Connect Setup window", 1, "lN", "window", "GoodSync Connect Setup" );
+            DElement wrk = g ( gsW, "Result text - sever label", 1, "lN", "text", "GoodSync Connect: Server Mode" );
 
-        String gstp_Address = "." + gsUser + ".goodsync";
-        String gstp_Email = "Connect Email: " + gsEmail;
-        String gstp_Account = "Connect Account: " + gsUser;
-        wrk = g ( gsW, "Result text", 1, "lN", "text", "This Computer address: gstp://" );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", gstp_Address );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", gstp_Email );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", "Connect Account: testbot" );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", "Windows User:" );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", "Auth User:" );
-        wrk = g ( gsW, "Result text", 1, "lN", "text", "Auth Name:" );
+            String gstp_Address = "." + gsUser + "-siber-com.goodsync";
+            String gstp_Email = "Connect Email: " + gsEmail;
+            String gstp_Account = "Connect Account: " + gsUser + "-siber-com";
+            wrk = g ( gsW, "Result text - computer label", 1, "lN", "text", "This Computer address: gstp://" );
+            wrk = g ( gsW, "Result text - gstp_Address" + gstp_Address, 1, "lN", "text", gstp_Address );
+            wrk = g ( gsW, "Result text - gstp_Email" + gstp_Email, 1, "lN", "text", gstp_Email );
+            wrk = g ( gsW, "Result text - Connect Account" + gstp_Account, 1, "lN", "text", gstp_Account );
+            wrk = g ( gsW, "Result text - label Windows User", 1, "lN", "text", "Windows User:" );
+            wrk = g ( gsW, "Result text - label Auth User", 1, "lN", "text", "Auth User:" );
+            wrk = g ( gsW, "Result text - label Auth Name", 1, "lN", "text", "Auth Name:" );
 
-        clickApply (gsW);
+            clickApply (gsW);
+            DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
     }
 
     public void configureGSAccount(String gsUser, String password) throws Exception {
-        DElement gsW = g ( null, "GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
-        DElement wrk = g ( gsW, "Text - UserId or Email", 2, "n", "UserId or Email" );
-        wrk.setEditValue ( gsUser );
-        wrk = g ( gsW, "Text - UserId or Email", 2, "n", "Password" );
-        wrk.setEditValue ( password );
-        clickNext (gsW);
+        try {
+            DElement gsW = g ( null, "configureGSAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            DElement wrk = g ( gsW, "Text - UserId or Email", 2, "n", "UserId or Email" );
+            wrk.setEditValue ( gsUser );
+            wrk = g ( gsW, "Text - Password", 2, "n", "Password" );
+            wrk.setEditValue ( password );
+            clickNext (gsW);
 
-        wrk = g ( gsW, "Text: Connecting to Mediator", 10, "UlN", "300", "text", "Connecting to Mediator" );
-        wrk = g ( gsW, "Explaining text", 3, "lN", "text", "GoodSync Server needs your Windows password to impersonate you for GoodSync client." );
-        wrk = g ( gsW, "Windows User", 3, "lN", "edit", "_GoodSync_Dialog_" );
+            sleep (2);
+
+            wrk = g ( gsW, "Explaining text", 5, "lN", "text", "GoodSync Server needs your Windows password to impersonate you for GoodSync client." );
+            wrk = g ( gsW, "Windows User", 3, "lN", "edit", "_GoodSync_Dialog_" );
+        } catch (Exception e) {
+            e.printStackTrace ();
+        }
     }
 }
-
