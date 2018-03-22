@@ -45,7 +45,7 @@ public class RunAllTests {
     private static Vector<String> getValueArray(JsonObject _o, String _property){
         if (_o.has(_property)){
             JsonArray ar = _o.get(_property).getAsJsonArray();
-            Vector<String> tempest = new Vector<>();
+            Vector<String> tempest = new Vector<String>();
             for (JsonElement el : ar){
                 tempest.add(el.getAsString());
             }
