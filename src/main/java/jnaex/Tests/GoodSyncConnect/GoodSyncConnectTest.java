@@ -2,13 +2,18 @@ package jnaex.Tests.GoodSyncConnect;
 
 import daima.DElement;
 import jnaex.RFWin.Proc;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import testLogger.ITest;
 
 import java.util.Vector;
 import java.util.Random;
 
+import Tools.WebTools;
+
 import static Tools.Elem.g;
 import static Tools.Elem.sleep;
+import static Tools.WebTools.deleteGSUser;
 
 /**
  * Created by E.Zarubaeva on 03/21/2017.
@@ -40,10 +45,9 @@ public class GoodSyncConnectTest implements ITest {
             Proc.setGLP ( "GoodSync" );
             Proc.lgP = "Connect Test";
 
-            //setupLocal ();
-            //setupExistingAccount ( "", "test" );
+            setupLocal ();
+            setupExistingAccount ( "", "test" );
             setupNewAccount ( "", "test" );
-            //verifyServerMode ("gs_qa721", "gs_qa721@siber.com");
 
             log ( "Test was completed without fatal exceptions" );
         } catch (Exception e) {
@@ -117,6 +121,13 @@ public class GoodSyncConnectTest implements ITest {
 
         sleep (1);
         verifyServerMode("gs_qa" + tail, gsEmail);
+
+        deleteGSAccount ( gsEmail, "testbot");
+    }
+
+    public void deleteGSAccount(String gsUser, String gsPassword) throws Exception {
+        WebDriver driverBrowser = new ChromeDriver ();
+        deleteGSUser (driverBrowser, gsUser, gsPassword);
     }
 
     public void clickNext(DElement gsW) {

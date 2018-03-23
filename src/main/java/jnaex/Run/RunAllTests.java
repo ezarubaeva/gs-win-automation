@@ -17,6 +17,7 @@ public class RunAllTests {
 
     public static void main(String[] args) throws Exception {
         setParametersJSON();
+        System.setProperty("webdriver.chrome.driver","C:\\ChromeDriver\\chromedriver.exe");
         TestLogger.startLogging();
 
         TestSet inst1 = new TestSet("GoodSync Connect Setup");
