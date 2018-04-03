@@ -31,4 +31,33 @@ public class Elem {
         KeyboardHandler.sendKeysHere(true, "{ENTER}");
         BrowseDialog.selectLeftFolder("folder", "");
     }
+
+    protected void setCheckBoxToValue(DElement _element, boolean _value){
+        String currentCheckBoxState = null;
+        try {
+            currentCheckBoxState = _element.getToggleState();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (currentCheckBoxState.isEmpty()){
+            throw new Error("CheckBox doesn't have toggle state on/off");
+        }
+        if (_value){
+            if (currentCheckBoxState.equals("Off")){
+                try {
+                    _element.click();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        } else {
+            if (currentCheckBoxState.equals("On")){
+                try {
+                    _element.click();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }

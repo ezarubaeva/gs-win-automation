@@ -5,7 +5,6 @@ import com.sun.jna.platform.win32.OaIdl;
 import daima.DElement;
 
 public class ProgramOptions  extends Elem {
-    private DElement prOptions;
     private DElement generalTab;
     private DElement autoTab;
     private DElement securityTab;
@@ -16,7 +15,7 @@ public class ProgramOptions  extends Elem {
 
     public ProgramOptions(){
         try {
-            prOptions = g(mainWindow, "", 1, "N", "Program Options - GoodSync");
+            DElement prOptions = g(mainWindow, "", 1, "N", "Program Options - GoodSync");
             generalTab = g(prOptions, "", 1, "N", "General");
             autoTab = g(prOptions, "", 1, "N", "Auto");
             securityTab = g(prOptions, "", 1, "N", "Security");
@@ -26,5 +25,23 @@ public class ProgramOptions  extends Elem {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public GeneralTab clickGeneralTab(){
+        try {
+            generalTab.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new GeneralTab();
+    }
+
+    public AutoTab clickAutoTab(){
+        try {
+            autoTab.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new AutoTab();
     }
 }
