@@ -5,6 +5,8 @@ import com.sun.jna.platform.win32.WinDef;
 import mmarquee.automation.AutomationException;
 import mmarquee.automation.UIAutomation;
 import mmarquee.automation.controls.*;
+import mmarquee.automation.pattern.PatternNotFoundException;
+import mmarquee.automation.uiautomation.ExpandCollapseState;
 
 import java.util.List;
 import java.util.Vector;
@@ -30,6 +32,8 @@ public class DElement{
     private static int UIA_ProcessIdPropertyId = 30002; //VT_I4
     private static int UIA_ProviderDescriptionPropertyId = 30107; //VT_BSTR
     private static int UIA_RuntimeIdPropertyId = 30000; //VT_I4 | VT_ARRRAY  #r
+    private static int UIA_ExpandCollapseExpandCollapseStatePropertyId = 30070;
+    private static int UIA_ToggleToggleStatePropertyId = 30086;
 
     /*
     gimMe abbreviation legend:
@@ -63,6 +67,9 @@ public class DElement{
         }
         if (_element.getClass() == AutomationComboBox.class) {
             typeAutomation = "combobox";
+        }
+        if (_element.getClass() == AutomationRadioButton.class){
+            typeAutomation = "radiobutton";
         }
     }
 
@@ -795,6 +802,28 @@ public class DElement{
         return element.getElement().getPropertyValue(UIA_RuntimeIdPropertyId).toString();
     }
 
+    public String getExpandCollapseState() throws Exception{
+        return element.getElement().getPropertyValue(UIA_ExpandCollapseExpandCollapseStatePropertyId).toString();
+    }
+
+    public String getToggleState() throws Exception {
+        return element.getElement().getPropertyValue(UIA_ToggleToggleStatePropertyId).toString();
+    }
+
+    public boolean isExpanded(){
+        // piece of shit
+        String str;
+        try {
+            str = getExpandCollapseState();
+        } catch (Exception e) {
+            throw new Error(e.getMessage() + " element is not expandable ");
+        }
+        if (!str.equals("1")) {
+            return false;
+        }
+        return true;
+    }
+
     private void p(String s){
         System.out.print(s);
     }
@@ -1264,6 +1293,13 @@ public class DElement{
         if (typeAutomation.equals("button")){
             AutomationButton butt = (AutomationButton) element;
             butt.click();
+        }
+    }
+
+    public void clickRadioBtn() throws PatternNotFoundException, AutomationException {
+        if(typeAutomation.equals("radiobutton")){
+            AutomationRadioButton butt = (AutomationRadioButton) element;
+            butt.select();
         }
     }
     public void click() throws Exception{

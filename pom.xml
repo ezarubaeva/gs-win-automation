@@ -41,6 +41,26 @@
             <artifactId>jna-platform</artifactId>
             <version>4.5.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.github.mmarquee</groupId>
+            <artifactId>ui-automation</artifactId>
+            <version>0.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.11.0</version>
+        </dependency>
+
     </dependencies>
 
     

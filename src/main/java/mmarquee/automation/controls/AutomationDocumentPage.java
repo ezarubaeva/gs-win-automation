@@ -8,7 +8,7 @@ import mmarquee.automation.pattern.PatternNotFoundException;
 /**
  * Created by Mark Humphreys on 28/01/2017.
  *
- * Represents a page in a document - i.e. a Word document.
+ * Represents a window in a document - i.e. a Word document.
  *
  * It seems to be a specific set of custom elements.
  */

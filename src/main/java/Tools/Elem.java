@@ -4,6 +4,15 @@ import daima.DElement;
 import daima.KeyboardHandler;
 
 public class Elem {
+    protected DElement mainWindow; // Its possible should be in Elem class
+
+    public Elem(){
+        try {
+            mainWindow = g(null, "GoodSync Main Window", 1, "N", "GoodSync -");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     public static DElement g(DElement _parent, String _dn, int _a, String _x, String..._xx) throws Exception{
         return DElement.gimMeP(_parent,_dn,_a,_x,_xx);
     }
