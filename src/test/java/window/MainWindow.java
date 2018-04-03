@@ -2,6 +2,10 @@ package window;
 
 import Tools.Elem;
 import daima.DElement;
+import window.ContextMenu.AllContextMenu;
+import window.ContextMenu.GroupContextMenu;
+import window.ContextMenu.JobContextMenu;
+import window.ContextMenu.ToolsContextMenu;
 import window.LeftPane.LeftPaneTree;
 
 public class MainWindow extends Elem {
@@ -18,6 +22,12 @@ public class MainWindow extends Elem {
     private DElement rightSideBrowseDlg;
     private DElement changeDirections;
     private DElement allJobsTree;
+    private DElement jobToolBar;
+    private DElement allToolBar;
+    private DElement viewToolBar;
+    private DElement actionToolBar;
+    private DElement toolsToolBar;
+    private DElement helpToolBar;
 
     public MainWindow(){
         super();
@@ -29,6 +39,13 @@ public class MainWindow extends Elem {
             analyzeButton =  g(mainWindow, "Analyze Button", 2, "N", "Analyze");
             syncButton = g(mainWindow, "Sync Button", 2, "N", "Sync");
             moreLink = g(mainWindow, "More Button", 2, "N", "More");
+            DElement toolbar = g(mainWindow, "", 1, "a", "48151623");
+            jobToolBar = g(toolbar, "", 1, "N", "Job");
+            allToolBar = g(toolbar, "", 1, "N", "All");
+            viewToolBar = g(toolbar, "", 1, "N", "View");
+            actionToolBar = g(toolbar, "", 1, "N", "Action");
+            toolsToolBar = g(toolbar, "", 1, "N", "Tools");
+            helpToolBar = g(toolbar, "", 1, "N", "Help");
         } catch (Exception e) {
             throw new Error(e.getMessage());
         }
@@ -106,6 +123,42 @@ public class MainWindow extends Elem {
             throw new Error(e.getMessage());
         }
         return new NewGroupWindow();
+    }
+
+    public JobContextMenu clickJobToolBarMenuForJob(){
+        try {
+            jobToolBar.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new JobContextMenu();
+    }
+
+    public GroupContextMenu clickJobToolBarMenuForGroup(){
+        try {
+            jobToolBar.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new GroupContextMenu();
+    }
+
+    public AllContextMenu clickAllToolBarMenu(){
+        try {
+            allToolBar.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new AllContextMenu();
+    }
+
+    public ToolsContextMenu clickToolsToolBarMenu(){
+        try {
+            toolsToolBar.click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new ToolsContextMenu();
     }
 
 
