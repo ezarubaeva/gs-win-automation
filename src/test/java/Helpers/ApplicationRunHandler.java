@@ -1,8 +1,11 @@
 package Helpers;
 
 import Tools.Elem;
+import com.sun.jna.platform.win32.Advapi32Util;
+import com.sun.jna.platform.win32.WinReg;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 public class ApplicationRunHandler extends Elem {
     private String pathToApp = "C:\\Program Files\\Siber Systems\\GoodSync\\GoodSync-v10.exe";
@@ -10,6 +13,7 @@ public class ApplicationRunHandler extends Elem {
 
     public void runGoodSyncApp(){
         int counter = 0;
+        setRegistryToInit();
         try {
             process = Runtime.getRuntime().exec(pathToApp);
             while (counter < 10){
@@ -35,6 +39,16 @@ public class ApplicationRunHandler extends Elem {
                 throw new Error("Can not close GoodSync application");
             }
         }
+    }
+
+    public void setRegistryToInit(){
+        try {
+            Advapi32Util.registrySetIntValue(WinReg.HKEY_CURRENT_USER, "Software\\Siber Systems\\GoodSync", "TreeViewSelected", 1);
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+            System.out.println(ex.getStackTrace());
+        }
+
     }
 
 }
