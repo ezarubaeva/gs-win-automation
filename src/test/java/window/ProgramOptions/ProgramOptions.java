@@ -1,10 +1,9 @@
 package window.ProgramOptions;
 
 import Tools.Elem;
-import com.sun.jna.platform.win32.OaIdl;
 import daima.DElement;
 
-public class ProgramOptions  extends Elem {
+public class ProgramOptions extends Elem {
     private DElement generalTab;
     private DElement autoTab;
     private DElement securityTab;
