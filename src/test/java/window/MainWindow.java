@@ -6,7 +6,6 @@ import window.ContextMenu.AllContextMenu;
 import window.ContextMenu.GroupContextMenu;
 import window.ContextMenu.JobContextMenu;
 import window.ContextMenu.ToolsContextMenu;
-import window.LeftPane.LeftPaneTree;
 
 public class MainWindow extends Elem {
 
@@ -32,6 +31,7 @@ public class MainWindow extends Elem {
     public MainWindow(){
         super();
         try {
+            mainWindow.setForeground ();
             // some elements are not here cuz they depend on left pane\tree selection
             newJobButton = g(mainWindow, "New Job Button", 2, "N", "New Job");
             newGroupButton = g(mainWindow, "New Group Button", 2, "N", "New Group");
