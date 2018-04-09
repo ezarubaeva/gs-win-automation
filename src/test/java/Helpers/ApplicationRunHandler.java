@@ -1,19 +1,33 @@
 package Helpers;
 
-import Tools.Elem;
-import com.sun.jna.platform.win32.Advapi32Util;
-import com.sun.jna.platform.win32.WinReg;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 
-public class ApplicationRunHandler extends Elem {
+import static Tools.Elem.g;
+import static Tools.Elem.sleep;
+
+public class ApplicationRunHandler {
     private String pathToApp = "C:\\Program Files\\Siber Systems\\GoodSync\\GoodSync-v10.exe";
     private Process process;
 
     public void runGoodSyncApp(){
         int counter = 0;
-        setRegistryToInit();
+        WinRegistry.setValue_HKCU_Software_SiberSys_GoodSync_DWORD("TreeViewSelected", 1);
+        String appdataPath = System.getenv("APPDATA");
+        String projectDirectory = System.getProperty("user.dir");
+        try {
+            FileUtils.cleanDirectory(new File(appdataPath + "\\GoodSync"));
+        } catch (IOException e) {
+            throw new Error("Error on cleaning directory %appdata% /GoodSync : " + e.getMessage());
+        }
+        try {
+            FileUtils.copyFile(new File(projectDirectory + "\\Files\\jobs-groups-options.tic"),
+                    new File(appdataPath + "\\GoodSync\\jobs-groups-options.tic") );
+        } catch (IOException e) {
+            throw new Error("Error on copy jobs-groups-options.tic to %appdata% folder: " + e.getMessage());
+        }
         try {
             process = Runtime.getRuntime().exec(pathToApp);
             while (counter < 10){
@@ -39,16 +53,6 @@ public class ApplicationRunHandler extends Elem {
                 throw new Error("Can not close GoodSync application");
             }
         }
-    }
-
-    public void setRegistryToInit(){
-        try {
-            Advapi32Util.registrySetIntValue(WinReg.HKEY_CURRENT_USER, "Software\\Siber Systems\\GoodSync", "TreeViewSelected", 1);
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-            System.out.println(ex.getStackTrace());
-        }
-
     }
 
 }
