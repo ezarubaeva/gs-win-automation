@@ -10,7 +10,7 @@ public class Elem {
         try {
             mainWindow = g(null, "GoodSync Main Window", 1, "N", "GoodSync -");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find GoodSync window element");
         }
     }
     public static DElement g(DElement _parent, String _dn, int _a, String _x, String..._xx) throws Exception{

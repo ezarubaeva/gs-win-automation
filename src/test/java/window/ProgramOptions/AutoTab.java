@@ -11,20 +11,44 @@ public class AutoTab extends Elem {
     private DElement autoInstallNewVerWhenFoundCheckBox;
     private DElement autoJobRunParallelInputField;
     private DElement autoJobsQuantInputField;
-    private DElement keepFileHistoryMoonthsInputField;
+    private DElement keepFileHistoryMonthsInputField;
     private DElement autoWnd;
 
     public AutoTab(){
         try {
             autoWnd = g(mainWindow, "", 1, "da", "76937328");
-            autoHideMiniWindNoActiveJobsCheckBox = g(autoWnd, "", 1, "N", "Auto-hide Mini Window when there is no active jobs.");
-            checkForNewVerDailyCheckBox = g(autoWnd, "", 1, "N", "Check for a new version daily");
-            autoInstallNewVerWhenFoundCheckBox = g(autoWnd, "", 1, "N", "Auto Install new version when found");
-            autoJobRunParallelInputField = g(autoWnd, "", 1, "N", "Maximal number of auto jobs that can be run in parallel");
-            autoJobsQuantInputField = g(autoWnd, "", 1, "N", "All jobs get reviewed every this many seconds to determine");
-            keepFileHistoryMoonthsInputField = g(autoWnd, "", 1, "N", "Discard file history (generations) that is older than");
         } catch (Exception e) {
-            throw new NotFoundException();
+            throw new Error("Can not find element Auto window");
+        }
+        try {
+            autoHideMiniWindNoActiveJobsCheckBox = g(autoWnd, "", 1, "N", "Auto-hide Mini Window when there is no active jobs.");
+        } catch (Exception e) {
+            throw new Error("Can not find element Auto hide mini window no active jobs check box");
+        }
+        try {
+            checkForNewVerDailyCheckBox = g(autoWnd, "", 1, "N", "Check for a new version daily");
+        } catch (Exception e) {
+            throw new Error("Can not find element Check for a new ver daily checkbox");
+        }
+        try {
+            autoInstallNewVerWhenFoundCheckBox = g(autoWnd, "", 1, "N", "Auto Install new version when found");
+        } catch (Exception e) {
+            throw new Error("Can not find element auto install new ver when found checkbox");
+        }
+        try {
+            autoJobRunParallelInputField = g(autoWnd, "", 1, "N", "Maximal number of auto jobs that can be run in parallel");
+        } catch (Exception e) {
+            throw new Error("Can not find element auto job runs in parallel input field");
+        }
+        try {
+            autoJobsQuantInputField = g(autoWnd, "", 1, "N", "All jobs get reviewed every this many seconds to determine");
+        } catch (Exception e) {
+            throw new Error("Can not find element auto jobs quant input field");
+        }
+        try {
+            keepFileHistoryMonthsInputField = g(autoWnd, "", 1, "N", "Discard file history (generations) that is older than");
+        } catch (Exception e) {
+            throw new Error("Can not find element keep file history months input field");
         }
 
     }

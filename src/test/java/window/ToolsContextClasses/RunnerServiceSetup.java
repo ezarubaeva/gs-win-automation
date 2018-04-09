@@ -12,15 +12,36 @@ public class RunnerServiceSetup extends Elem {
     private DElement cancelBtn;
 
     public RunnerServiceSetup(){
+        DElement runServiceWnd = null;
         try {
-            DElement runServiceWnd = g(mainWindow, "", 1, "N", "Runner Service Setup");
+            runServiceWnd = g(mainWindow, "", 1, "N", "Runner Service Setup");
+        } catch (Exception e) {
+            throw new Error("Can not find element Runner service setup");
+        }
+        try {
             windowsUserInputField = g(runServiceWnd, "", 1, "N", "Windows User");
+        } catch (Exception e) {
+            throw new Error("Can not find element windows user id field");
+        }
+        try {
             windowsPasswdInputField = g(runServiceWnd, "", 1, "N", "Windows Password");
+        } catch (Exception e) {
+            throw new Error("Can not find element windows password field");
+        }
+        try {
             backBtn = g(runServiceWnd, "", 1, "N", "< Back");
+        } catch (Exception e) {
+            throw new Error("Can not find element Back btn");
+        }
+        try {
             applyBtn = g(runServiceWnd, "", 1, "N", "Apply");
+        } catch (Exception e) {
+            throw new Error("Can not find element apply btn");
+        }
+        try {
             cancelBtn = g(runServiceWnd, "", 1, "N", "Cancel");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find element Cancel btn");
         }
     }
 

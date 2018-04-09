@@ -12,11 +12,23 @@ public class RenameWindow extends Elem {
     public RenameWindow(){
         try {
             rename = g(mainWindow, "", 1, "N", "Rename Job");
+        } catch (Exception e) {
+            throw new Error("Can not found element 'rename job'");
+        }
+        try {
             jobNameInputField = g(rename, "", 1, "N", "Enter Job Name");
+        } catch (Exception e) {
+            throw new Error("Can not find element input field 'Enter job name");
+        }
+        try {
             okBtn = g(rename, "", 1, "N", "OK");
+        } catch (Exception e) {
+            throw new Error("can not find element OK button");
+        }
+        try {
             cancelBtn = g(rename, "", 1, "N", "Cancel");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not fine element Cancel button");
         }
     }
     public RenameWindow inputJobName(String _name){
