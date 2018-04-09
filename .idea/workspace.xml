@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/testClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/testClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +25,7 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state>
               <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -62,12 +59,8 @@
       <file leaf-file-name="testClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -75,8 +68,8 @@
       <file leaf-file-name="ApplicationRunHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="177">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,24 +77,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WinRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5593">
-              <caret line="329" column="42" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
+            <state relative-caret-position="4539">
+              <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12470#12485#0" expanded="true" />
-                <element signature="e#13767#13775#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,8 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -568,38 +550,45 @@
       <option name="project" value="LOCAL" />
       <updated>1522777367828</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="04/09/18 Working on start up application and init phase">
+      <created>1523270354697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523270354697</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testClass_test - 2018.04.06 at 08h 02m 29s.xml">
-      <configuration name="testClass.test" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 03h 53m 13s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_test - 2018.04.06 at 08h 03m 41s.xml">
-      <configuration name="testClass.test" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 03h 55m 27s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_test - 2018.04.06 at 08h 04m 39s.xml">
-      <configuration name="testClass.test" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 04m 42s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_test - 2018.04.06 at 08h 05m 29s.xml">
-      <configuration name="testClass.test" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 10m 43s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_test - 2018.04.06 at 08h 06m 41s.xml">
-      <configuration name="testClass.test" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 16m 41s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.06 at 08h 19m 58s.xml">
-      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 19m 39s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.06 at 08h 35m 14s.xml">
-      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 23m 45s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.06 at 08h 35m 48s.xml">
-      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 26m 34s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.06 at 08h 36m 58s.xml">
-      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
+    <history-entry file="testClass - 2018.04.09 at 05h 27m 30s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.06 at 08h 57m 22s.xml">
+    <history-entry file="testClass - 2018.04.09 at 05h 28m 41s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -619,13 +608,13 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22092116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22092116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.37585035" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37585035" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -644,36 +633,23 @@
     </ignored-roots>
     <MESSAGE value="03/20/2018 Added Maven support. Moved JNA, javax.mail and other dependencies to maven." />
     <MESSAGE value="04/03/18 further implementation of Page object pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/03/18 further implementation of Page object pattern" />
+    <MESSAGE value="04/09/18 Working on start up application and init phase" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/09/18 Working on start up application and init phase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test/testClass.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#incrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-            <element signature="method#decrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2465">
@@ -874,9 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,10 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,18 +943,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state>
           <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
         </state>
       </provider>
     </entry>
@@ -996,26 +958,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#incrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-            <element signature="method#decrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1023,9 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,27 +988,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
+        <state relative-caret-position="397">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5593">
-          <caret line="329" column="42" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
+        <state relative-caret-position="4539">
+          <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#12470#12485#0" expanded="true" />
-            <element signature="e#13767#13775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="398" selection-start-line="398" selection-end-line="398" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jna-platform-4.5.0.jar!/com/sun/jna/platform/win32/Advapi32.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="152" column="8" selection-start-line="152" selection-start-column="8" selection-end-line="152" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jna-platform-4.5.0.jar!/com/sun/jna/platform/win32/Advapi32Util.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-884">
+          <caret line="907" column="30" lean-forward="true" selection-start-line="907" selection-start-column="30" selection-end-line="907" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state relative-caret-position="177">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
