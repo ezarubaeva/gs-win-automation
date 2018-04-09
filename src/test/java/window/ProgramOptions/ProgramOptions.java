@@ -13,6 +13,7 @@ public class ProgramOptions extends Elem {
 
 
     public ProgramOptions(){
+        super();
         DElement prOptions = null;
         try {
             prOptions = g(mainWindow, "", 1, "N", "Program Options - GoodSync");

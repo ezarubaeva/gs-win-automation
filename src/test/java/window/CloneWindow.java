@@ -12,6 +12,7 @@ public class CloneWindow extends Elem {
     private DElement cancelBtn;
 
     public CloneWindow(){
+        super();
         try {
             clone = g(mainWindow, "", 1, "N", "Clone Job");
         } catch (Exception e) {

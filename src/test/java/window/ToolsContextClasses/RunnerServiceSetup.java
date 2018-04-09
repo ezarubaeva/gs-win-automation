@@ -12,6 +12,7 @@ public class RunnerServiceSetup extends Elem {
     private DElement cancelBtn;
 
     public RunnerServiceSetup(){
+        super();
         DElement runServiceWnd = null;
         try {
             runServiceWnd = g(mainWindow, "", 1, "N", "Runner Service Setup");

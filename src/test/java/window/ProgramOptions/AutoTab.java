@@ -15,6 +15,7 @@ public class AutoTab extends Elem {
     private DElement autoWnd;
 
     public AutoTab(){
+        super();
         try {
             autoWnd = g(mainWindow, "", 1, "da", "76937328");
         } catch (Exception e) {

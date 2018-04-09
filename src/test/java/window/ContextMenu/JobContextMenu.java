@@ -24,6 +24,7 @@ public class JobContextMenu extends Elem {
     DElement exit;
 
     public JobContextMenu() {
+        super();
         try {
             analyze = g(mainWindow, "", 1, "N", "Analyze");
         } catch (Exception e) {

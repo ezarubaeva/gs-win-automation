@@ -12,6 +12,7 @@ public class AllContextMenu extends Elem {
     private DElement autoRunOFF;
 
     public AllContextMenu(){
+        super();
         try {
             analyzeAll = g(mainWindow, "", 1, "N", "Analyze All");
         } catch (Exception e) {

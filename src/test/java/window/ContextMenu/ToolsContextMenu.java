@@ -17,6 +17,7 @@ public class ToolsContextMenu extends Elem {
     private DElement importJobList;
 
     public ToolsContextMenu(){
+        super();
         try {
             programOptions = g(mainWindow, "", 1, "N", "Program Options...");
         } catch (Exception e) {

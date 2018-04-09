@@ -12,6 +12,7 @@ public class NewGoodSyncJobWindow extends Elem {
     private DElement cancelBtn;
 
     public NewGoodSyncJobWindow(){
+        super();
         try {
             window = g(mainWindow, "New job dialog", 1, "N", "New GoodSync Job");
         } catch (Exception e) {

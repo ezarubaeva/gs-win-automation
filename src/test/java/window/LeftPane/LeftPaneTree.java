@@ -11,6 +11,7 @@ public class LeftPaneTree extends Elem {
     private DElement syncJobs;
 
     public LeftPaneTree(){
+        super();
         try {
             allJobs = g(mainWindow, "All Jobs Tree", 1, "dN", "All Jobs");
         } catch (Exception e) {

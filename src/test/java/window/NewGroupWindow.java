@@ -10,6 +10,7 @@ public class NewGroupWindow extends Elem {
     private DElement cancelBtn;
 
     public NewGroupWindow(){
+        super();
         try {
             window = g(mainWindow, "Create New Group Window", 1, "N", "New Group");
         } catch (Exception e) {

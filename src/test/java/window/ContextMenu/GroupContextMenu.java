@@ -15,6 +15,7 @@ public class GroupContextMenu extends Elem {
     private DElement exit;
 
     public GroupContextMenu(){
+        super();
         try {
             analyze = g(mainWindow, "Group context -> analyze", 1, "da", "Item 901");
         } catch (Exception e) {

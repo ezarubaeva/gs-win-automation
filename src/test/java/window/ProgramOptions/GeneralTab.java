@@ -13,6 +13,7 @@ public class GeneralTab extends Elem {
     private DElement addGoodSyncShortcutDesktop;
 
     public GeneralTab(){
+        super();
         DElement prOptions = null;
         try {
             prOptions = g(mainWindow, "", 1, "da", "76937328");

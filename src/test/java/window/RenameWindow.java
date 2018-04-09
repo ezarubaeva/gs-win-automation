@@ -10,6 +10,7 @@ public class RenameWindow extends Elem {
     private DElement cancelBtn;
 
     public RenameWindow(){
+        super();
         try {
             rename = g(mainWindow, "", 1, "N", "Rename Job");
         } catch (Exception e) {
