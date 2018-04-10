@@ -1,4 +1,6 @@
 package Helpers;
+import java.io.File;
+
 import static Tools.Elem.g;
 import static Tools.Elem.sleep;
 
@@ -25,6 +27,10 @@ public class ApplicationRunHandler {
         } catch (IOException e) {
             throw new Error("Error on copy jobs-groups-options.tic to %appdata% folder: " + e.getMessage());
         }*/
+        File gs = new File(pathToApp);
+        if (!gs.exists() && !gs.isFile()){
+            throw new Error("Can not find GoodSync executable file at path: " + pathToApp);
+        }
         try {
             process = Runtime.getRuntime().exec(pathToApp);
             while (counter < 10){
