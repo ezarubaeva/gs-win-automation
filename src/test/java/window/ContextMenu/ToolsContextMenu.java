@@ -16,50 +16,51 @@ public class ToolsContextMenu extends Elem {
     private DElement exportSelectedJobs;
     private DElement importJobList;
 
-    public ToolsContextMenu(){
+    public ToolsContextMenu() throws Exception {
         super();
+        DElement parentMenu = g(null, "Whole menu - Tools", 1, "lN", "menu", "Context");
         try {
-            programOptions = g(mainWindow, "", 1, "N", "Program Options...");
+            programOptions = g(parentMenu, "Tools -> Program options", 1, "lN", "menu item", "Program Options...");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> Program options");
         }
         try {
-            goodsyncConnectSetup = g(mainWindow, "", 1, "N", "GoodSync Connect Setup...");
+            goodsyncConnectSetup = g(parentMenu, "Tools -> GS connect setup", 1, "N", "GoodSync Connect Setup...");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> GS connect setup");
         }
         try {
-            runnerServiceSetup = g(mainWindow, "", 1, "N", "Runner Service Setup...");
+            runnerServiceSetup = g(parentMenu, "Tools -> Runner service setup", 1, "N", "Runner Service Setup...");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> Runner service setup");
         }
         try {
-            serverAdvancedOptions = g(mainWindow, "", 1, "N", "Server Advanced Options...");
+            serverAdvancedOptions = g(parentMenu, "Tools -> Server Advanced Options", 1, "N", "Server Advanced Options...");
         } catch (Exception e) {
-            throw new Error("Can not find element Tools -> server advanced options");
+            throw new Error("Can not find element Tools -> Server Advanced Options");
         }
         try {
-            uploadAccountsToControlCenter = g(mainWindow, "", 1, "N", "Upload Accounts to");
+            uploadAccountsToControlCenter = g(parentMenu, "Tools -> Upload accounts", 1, "N", "Upload Accounts to");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> Upload accounts to");
         }
         try {
-            uploadJobsToControlCenter = g(mainWindow, "", 1, "N", "Upload Jobs to");
+            uploadJobsToControlCenter = g(parentMenu, "Tools -> upload jobs to", 1, "N", "Upload Jobs to");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> upload jobs to");
         }
         try {
-            exportAllJobs = g(mainWindow, "", 1, "N", "Export All Jobs...");
+            exportAllJobs = g(parentMenu, "Tools -> Export all jobs", 1, "N", "Export All Jobs...");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> Export all jobs");
         }
         try {
-            exportSelectedJobs = g(mainWindow, "", 1, "N", "Export Selected Jobs");
+            exportSelectedJobs = g(parentMenu, "Tools -> Export selected jobs", 1, "N", "Export Selected Jobs");
         } catch (Exception e) {
             throw new Error("Can not find element Tools -> Export selected jobs");
         }
         try {
-            importJobList = g(mainWindow, "", 1, "N", "Import Job List...");
+            importJobList = g(parentMenu, "Tools -> Import job list", 1, "N", "Import Job List...");
         } catch (Exception e) {
             throw new Error("can not find element Tools -> Import job list");
         }
