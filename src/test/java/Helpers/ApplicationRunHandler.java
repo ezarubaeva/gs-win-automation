@@ -1,5 +1,8 @@
 package Helpers;
-import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+import java.io.*;
 
 import static Tools.Elem.g;
 import static Tools.Elem.sleep;
@@ -8,8 +11,32 @@ public class ApplicationRunHandler {
     private String pathToApp = "C:\\Program Files\\Siber Systems\\GoodSync\\GoodSync-v10.exe";
     private Process process;
 
-    public void runGoodSyncApp(){
+    // http://stackoverflow.com/a/19005828/3764804
+    private boolean isProcessRunning() throws IOException, InterruptedException
+    {
+        String line = "";
+        String pidInfo = "";
+
+        Process p =Runtime.getRuntime().exec(System.getenv("windir") +"\\system32\\"+"tasklist.exe");
+
+        BufferedReader input =  new BufferedReader(new InputStreamReader(p.getInputStream()));
+
+        while ((line = input.readLine()) != null) {
+            pidInfo += line;
+        }
+
+        input.close();
+        return pidInfo.contains ("GoodSync-v10.exe");
+    }
+
+    public void runGoodSyncApp() throws IOException, InterruptedException {
         int counter = 0;
+
+        while (isProcessRunning ()) {
+            Runtime.getRuntime().exec ("taskkill /F /IM GoodSync-v10.exe");
+            Runtime.getRuntime().exec ("taskkill /F /IM gs-runner.exe");
+        }
+
         WinRegistry.setValue_HKCU_Software_SiberSys_GoodSync_DWORD("TreeViewSelected", 1);
         FileOperations.deleteAllInAppData();
         FileOperations.copyFileFromProjectDirToAppData("Files\\jobs-groups-options.tic",
@@ -42,11 +69,12 @@ public class ApplicationRunHandler {
                     sleep(1);
                 }
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             throw new Error("Can not start GoodSync application on: " + pathToApp);
         }
     }
 
+    // Closes
     public void closeGoodSyncApp(){
         int counter = 0;
         while (process.isAlive()){
