@@ -3,6 +3,7 @@ package window.ContextMenu;
 import Tools.Elem;
 import daima.DElement;
 import jnaex.Tests.GoodSyncConnect.GoodSyncConnectTest;
+import window.GoodSyncConnect.GoodSyncConnectWindow;
 import window.ProgramOptions.ProgramOptions;
 
 public class ToolsContextMenu extends Elem {
@@ -75,12 +76,12 @@ public class ToolsContextMenu extends Elem {
         return new ProgramOptions();
     }
 
-    public GoodSyncConnectTest selectGSconnectSetup(){
+    public GoodSyncConnectWindow selectGSconnectSetup(){
         try {
             goodsyncConnectSetup.click();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return new GoodSyncConnectTest();
+        return new GoodSyncConnectWindow ();
     }
 }
