@@ -33,6 +33,7 @@ public class GoodSyncConnectWindow extends Elem {
     }
 
     public void setupNewAccount( String windowsPassword) throws Exception {
+        try {
         chooseMode ( "yes" );
         DElement wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Create a new GoodSync Connect Account" );
         wrk.click ();
@@ -64,6 +65,27 @@ public class GoodSyncConnectWindow extends Elem {
         verifyServerMode("gs_qa" + tail, gsEmail);
 
         deleteGSAccount ( gsEmail, "testbot");
+        } catch (Exception e) {
+            throw new Error ( "GoodSync Connect: New account was not setup" );
+        }
+    }
+
+    public void setupExistingAccount(String windowsPassword) throws Exception {
+        try {
+            DElement gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            configureGSAccount ( "testbot", "testbot" );
+
+            // Do not change windows user for now
+            DElement wrk = g ( gsW, "Edit: Windows User", 3, "lN", "edit", "Windows User" );
+            wrk.setEditValue (System.getProperty("user.name"));
+            wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
+            wrk.setEditValue ( windowsPassword );
+            clickNext ();
+
+            verifyServerMode ( "testbot", "gs_qa@siber.com" );
+        } catch (Exception e) {
+            throw new Error ( "GoodSync Connect: Existing account was not setup");
+        }
     }
 
     public void deleteGSAccount(String gsUser, String gsPassword) throws Exception {
@@ -93,12 +115,11 @@ public class GoodSyncConnectWindow extends Elem {
 
     public void chooseMode(String mode) throws Exception {
         try {
-            DElement gsWin = g ( null, "chooseMode: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
             DElement wrk;
             if (mode.equals ( "yes" )) {
-                wrk = g ( gsWin, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
+                wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
             } else {
-                wrk = g ( gsWin, "Radio button No", 1, "lN", "radio button", "No, do not setup GoodSync Connect" );
+                wrk = g ( gsW, "Radio button No", 1, "lN", "radio button", "No, do not setup GoodSync Connect" );
             }
 
             wrk.click ();
