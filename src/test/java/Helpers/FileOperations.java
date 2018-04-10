@@ -3,7 +3,6 @@ package Helpers;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -63,6 +62,7 @@ public class FileOperations {
         }
 
     }
+
 
     public static void copyFileFromProjectDirToAppData(String source, String destinationAppData){
         String projectDirectory = System.getProperty("user.dir");

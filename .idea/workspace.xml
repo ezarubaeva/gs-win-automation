@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="">
+    <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="04/10/18 FileOperations class added to handle file operations (not tested)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_descriptions_javadoc_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_testng_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Win Automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Win Automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/FileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/FileOperations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +31,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+            <state relative-caret-position="442">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,11 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="340">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Elem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Elem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -45,7 +61,7 @@
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="578">
               <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
             </state>
           </provider>
@@ -54,11 +70,29 @@
       <file leaf-file-name="ApplicationRunHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="26" column="84" lean-forward="true" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+            <state relative-caret-position="85">
+              <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileOperations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/FileOperations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -118,7 +152,6 @@
         <option value="$PROJECT_DIR$/src/test/java/window/LogWindow.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApplicationRunHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/testClass.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tools/Elem.java" />
@@ -135,7 +168,11 @@
         <option value="$PROJECT_DIR$/src/test/java/window/NewGoodSyncJobWindow.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/NewGroupWindow.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/RenameWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Messages/AlertWindow.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Helpers/FileOperations.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -157,8 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,10 +201,42 @@
               <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="Files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -191,6 +258,9 @@
       <recent name="GoodSyncConnect" />
       <recent name="jnaex.Run" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\gs-win-automation\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testClass">
+  <component name="RunManager" selected="JUnit.All in Win Automation">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -212,6 +282,22 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="All in Win Automation" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -248,6 +334,29 @@
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="test" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <module name="Win Automation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
     </configuration>
@@ -410,6 +519,8 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
+      <item itemvalue="TestNG.test" />
+      <item itemvalue="JUnit.All in Win Automation" />
       <item itemvalue="TestNG.testClass.newBackupJobIsNotPresentInSyncJobsTest" />
       <item itemvalue="TestNG.testClass.newBackUpJobPresentInBackupGroupTest" />
       <item itemvalue="TestNG.testClass" />
@@ -418,11 +529,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testClass" />
-        <item itemvalue="TestNG.testClass.newJobIsPlacedInAllJobsTest" />
-        <item itemvalue="TestNG.testClass.test" />
-        <item itemvalue="TestNG.testClass.newBackupJobIsNotPresentInSyncJobsTest" />
         <item itemvalue="TestNG.testClass.newBackUpJobPresentInBackupGroupTest" />
+        <item itemvalue="TestNG.testClass.newJobIsPlacedInAllJobsTest" />
+        <item itemvalue="TestNG.testClass.newBackupJobIsNotPresentInSyncJobsTest" />
+        <item itemvalue="TestNG.testClass" />
+        <item itemvalue="TestNG.testClass.test" />
       </list>
     </recent_temporary>
   </component>
@@ -509,39 +620,81 @@
       <option name="project" value="LOCAL" />
       <updated>1523294617706</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="04/09/18 Added clean APPDATA + set Show Left Tree in registry + copy file with job to APPDATA on init() phase">
+      <created>1523299762258</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1523299762258</updated>
+    </task>
+    <task id="LOCAL-00012" summary="04/10/18 Added job.tix file">
+      <created>1523353493610</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1523353493610</updated>
+    </task>
+    <task id="LOCAL-00013" summary="04/10/18 FileOperations class added to handle file operations (not tested)">
+      <created>1523362979319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523362979319</updated>
+    </task>
+    <task id="LOCAL-00014" summary="04/10/18 FileOperations class added to handle file operations (not tested)">
+      <created>1523363300986</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523363300986</updated>
+    </task>
+    <task id="LOCAL-00015" summary="04/10/18 isProcessRunning() changed exception handling">
+      <created>1523369435301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1523369435301</updated>
+    </task>
+    <task id="LOCAL-00016" summary="04/10/18 Messages package removed cuz all dialog windows has the same class. Possible its better way to implement base modalDlgWnd + diff interfaces">
+      <created>1523369949312</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1523369949312</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testClass - 2018.04.09 at 05h 26m 34s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 44m 16s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 27m 30s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 45m 38s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 28m 41s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 46m 41s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 47m 07s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 47m 08s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 15m 04s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 48m 49s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 15m 30s.xml">
+    <history-entry file="testClass - 2018.04.10 at 05h 49m 41s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 20m 20s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
+    <history-entry file="testClass_newBackupJobIsNotPresentInSyncJobsTest - 2018.04.10 at 05h 50m 49s.xml">
+      <configuration name="testClass.newBackupJobIsNotPresentInSyncJobsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 37m 42s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
+    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.10 at 05h 51m 08s.xml">
+      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 43m 47s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
+    <history-entry file="testClass_newJobIsPlacedInAllJobsTest - 2018.04.10 at 05h 52m 49s.xml">
+      <configuration name="testClass.newJobIsPlacedInAllJobsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 11h 45m 21s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
+    <history-entry file="testClass_newBackUpJobPresentInBackupGroupTest - 2018.04.10 at 05h 53m 04s.xml">
+      <configuration name="testClass.newBackUpJobPresentInBackupGroupTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -550,24 +703,23 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47231096" weight="0.3282313" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5149095" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25170067" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.25170067" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48509052" weight="0.27891156" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22092116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22092116" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37585035" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37585035" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -575,6 +727,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49574015" weight="0.2414966" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47231096" weight="0.3282313" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -589,7 +742,12 @@
     <MESSAGE value="04/09/18 Working on start up application and init phase" />
     <MESSAGE value="04/09/18 Finding elements on Object creation is wrapped with try catch for every element - it will increase problem debuging on element not found during object creation." />
     <MESSAGE value="04/09/18 Minor fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/09/18 Minor fixing" />
+    <MESSAGE value="04/09/18 Added clean APPDATA + set Show Left Tree in registry + copy file with job to APPDATA on init() phase" />
+    <MESSAGE value="04/10/18 Added job.tix file" />
+    <MESSAGE value="04/10/18 FileOperations class added to handle file operations (not tested)" />
+    <MESSAGE value="04/10/18 isProcessRunning() changed exception handling" />
+    <MESSAGE value="04/10/18 Messages package removed cuz all dialog windows has the same class. Possible its better way to implement base modalDlgWnd + diff interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/10/18 Messages package removed cuz all dialog windows has the same class. Possible its better way to implement base modalDlgWnd + diff interfaces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,46 +756,13 @@
           <url>file://$PROJECT_DIR$/src/test/java/test/testClass.java</url>
           <line>19</line>
           <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/RenameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -729,10 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="375" column="18" selection-start-line="375" selection-start-column="18" selection-end-line="375" selection-end-column="18" />
-          <folding>
-            <element signature="e#15711#15712#0" expanded="true" />
-            <element signature="e#15747#15748#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,20 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="398" selection-start-line="398" selection-end-line="398" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/jna-platform-4.5.0.jar!/com/sun/jna/platform/win32/Advapi32.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1853">
@@ -817,9 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="52" column="116" lean-forward="true" selection-start-line="52" selection-start-column="116" selection-end-line="52" selection-end-column="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -832,9 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,9 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,11 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#incrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-            <element signature="method#decrementAutoRunJobsInParallel#0;class#AutoTab#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -909,9 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,13 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -973,8 +1053,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+        <state relative-caret-position="442">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -983,25 +1063,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Elem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8/testng-6.8.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="398" selection-start-line="398" selection-end-line="398" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Messages/AlertWindow.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="84" lean-forward="true" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+        <state relative-caret-position="85">
+          <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="102">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/FileOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1070,7 +1186,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.github.lookfirst:sardine:5.8</last-edited>
+          <last-edited>javax</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
