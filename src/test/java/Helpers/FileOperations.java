@@ -69,8 +69,8 @@ public class FileOperations {
         String appdataPath = System.getenv("APPDATA");
         try {
             FileUtils.copyFile(new File(projectDirectory + "\\" + source),
-                    new File(appdataPath + "\\" + destinationAppData) );
-        } catch (IOException e) {
+                    new File(appdataPath + "\\GoodSync\\" + destinationAppData) );
+        } catch (Exception e) {
             throw new Error("Error on copy file from project dir to destination folder: " + e.getMessage());
         }
     }

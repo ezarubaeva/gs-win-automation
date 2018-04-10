@@ -12,12 +12,16 @@ public class ApplicationRunHandler {
     private Process process;
 
     // http://stackoverflow.com/a/19005828/3764804
-    private boolean isProcessRunning() throws IOException, InterruptedException
-    {
+    private boolean isProcessRunning() throws IOException {
         String line = "";
         String pidInfo = "";
 
-        Process p =Runtime.getRuntime().exec(System.getenv("windir") +"\\system32\\"+"tasklist.exe");
+        Process p = null;
+        try {
+            p = Runtime.getRuntime().exec(System.getenv("windir") +"\\system32\\"+"tasklist.exe");
+        } catch (Exception e) {
+            throw new Error("Error on getting tasklist.exe: " + e.getMessage());
+        }
 
         BufferedReader input =  new BufferedReader(new InputStreamReader(p.getInputStream()));
 
@@ -29,18 +33,23 @@ public class ApplicationRunHandler {
         return pidInfo.contains ("GoodSync-v10.exe");
     }
 
-    public void runGoodSyncApp() throws IOException, InterruptedException {
+    public void runGoodSyncApp() {
         int counter = 0;
 
-        while (isProcessRunning ()) {
-            Runtime.getRuntime().exec ("taskkill /F /IM GoodSync-v10.exe");
-            Runtime.getRuntime().exec ("taskkill /F /IM gs-runner.exe");
+        try {
+            while (isProcessRunning ()) {
+                Runtime.getRuntime().exec ("taskkill /F /IM GoodSync-v10.exe");
+                Runtime.getRuntime().exec ("taskkill /F /IM gs-runner.exe");
+            }
+        } catch (Exception e){
+            throw new Error("Error on killing GS process: " + e.getMessage());
         }
+
 
         WinRegistry.setValue_HKCU_Software_SiberSys_GoodSync_DWORD("TreeViewSelected", 1);
         FileOperations.deleteAllInAppData();
         FileOperations.copyFileFromProjectDirToAppData("Files\\jobs-groups-options.tic",
-                "\\jobs-groups-options.tic");
+                "jobs-groups-options.tic");
         /*String appdataPath = System.getenv("APPDATA");
         String projectDirectory = System.getProperty("user.dir");
         try {
@@ -80,6 +89,7 @@ public class ApplicationRunHandler {
         while (process.isAlive()){
             process.destroy();
             counter++;
+            sleep(1);
             if (counter > 10){
                 throw new Error("Can not close GoodSync application");
             }
