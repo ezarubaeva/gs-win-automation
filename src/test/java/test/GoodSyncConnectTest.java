@@ -52,7 +52,7 @@ public class GoodSyncConnectTest {
     }
 
     @Test
-    public void setupLocal() throws Exception {
+    public void setupLocalTest() throws Exception {
         try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             sleep ( 1 );
@@ -64,31 +64,14 @@ public class GoodSyncConnectTest {
     @Test
     void setupExistingAccountTest() throws Exception {
         try {
-            setupExistingAccountTest ("test");
-        } catch (Exception e) {
-        }
-    }
-
-    void setupExistingAccountTest(String windowsPassword) throws Exception {
-        try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
-            DElement gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
-            gsConnectWin.configureGSAccount ( "testbot", "testbot" );
-
-            // Do not change windows user for now
-            DElement wrk = g ( gsW, "Edit: Windows User", 3, "lN", "edit", "Windows User" );
-            wrk.setEditValue (System.getProperty("user.name"));
-            wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
-            wrk.setEditValue ( windowsPassword );
-            gsConnectWin.clickNext ();
-
-            gsConnectWin.verifyServerMode ( "testbot", "gs_qa@siber.com" );
+            gsConnectWin.setupExistingAccount ("test");
         } catch (Exception e) {
         }
     }
 
     @Test
-    void setupNewAccount() throws Exception {
+    void setupNewAccountTest() throws Exception {
         try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             gsConnectWin.setupNewAccount ( "test" );
