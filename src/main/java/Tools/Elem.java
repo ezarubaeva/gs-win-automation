@@ -8,7 +8,8 @@ public class Elem {
 
     public Elem(){
         try {
-            mainWindow = g(null, "GoodSync Main Window", 1, "N", "GoodSync -");
+            //mainWindow = g(null, "GoodSync Main Window", 1, "N", "GoodSync -");
+            mainWindow = g(null, "GoodSync Main Window", 1, "C", "{B26B00DA-2E5D-4CF2-83C5-911198C0F009}");
         } catch (Exception e) {
             e.printStackTrace();
         }
