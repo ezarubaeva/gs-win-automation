@@ -1,10 +1,4 @@
 package Helpers;
-
-import org.apache.commons.io.FileUtils;
-
-import java.io.File;
-import java.io.IOException;
-
 import static Tools.Elem.g;
 import static Tools.Elem.sleep;
 
@@ -15,7 +9,10 @@ public class ApplicationRunHandler {
     public void runGoodSyncApp(){
         int counter = 0;
         WinRegistry.setValue_HKCU_Software_SiberSys_GoodSync_DWORD("TreeViewSelected", 1);
-        String appdataPath = System.getenv("APPDATA");
+        FileOperations.deleteAllInAppData();
+        FileOperations.copyFileFromProjectDirToAppData("Files\\jobs-groups-options.tic",
+                "\\jobs-groups-options.tic");
+        /*String appdataPath = System.getenv("APPDATA");
         String projectDirectory = System.getProperty("user.dir");
         try {
             FileUtils.cleanDirectory(new File(appdataPath + "\\GoodSync"));
@@ -27,7 +24,7 @@ public class ApplicationRunHandler {
                     new File(appdataPath + "\\GoodSync\\jobs-groups-options.tic") );
         } catch (IOException e) {
             throw new Error("Error on copy jobs-groups-options.tic to %appdata% folder: " + e.getMessage());
-        }
+        }*/
         try {
             process = Runtime.getRuntime().exec(pathToApp);
             while (counter < 10){
@@ -39,7 +36,7 @@ public class ApplicationRunHandler {
                     sleep(1);
                 }
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new Error("Can not start GoodSync application on: " + pathToApp);
         }
     }
