@@ -12,14 +12,31 @@ public class AllContextMenu extends Elem {
     private DElement autoRunOFF;
 
     public AllContextMenu(){
+        super();
         try {
             analyzeAll = g(mainWindow, "", 1, "N", "Analyze All");
+        } catch (Exception e) {
+            throw new Error("Can not find element Analyze all");
+        }
+        try {
             synchronyzeAll = g(mainWindow, "", 1, "N", "Synchronize All");
+        } catch (Exception e) {
+            throw new Error("Can not find element Synchronize all");
+        }
+        try {
             analyzeAndSyncAll = g(mainWindow, "", 1, "N", "Analyze and Sync All");
+        } catch (Exception e) {
+            throw new Error("Can not find element Analyze and Sync all");
+        }
+        try {
             stopAll = g(mainWindow, "", 1, "N", "Stop All");
+        } catch (Exception e) {
+            throw new Error("Can not find element Stop all");
+        }
+        try {
             autoRunOFF = g(mainWindow, "", 1, "N", "AutoRun OFF");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find element AutoRun OFF");
         }
     }
 

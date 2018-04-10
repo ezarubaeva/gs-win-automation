@@ -4,7 +4,6 @@
     <list default="true" readonly="true" id="43157e8b-c37b-47c4-8fd2-31ae8d4e8f75" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+            <state relative-caret-position="578">
+              <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,57 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobContextMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#JobContextMenu#0;class#JobContextMenu#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobOptions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/window/JobOptions/JobOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="153">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationRunHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WinRegistry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4539">
-              <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +45,20 @@
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="340">
               <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationRunHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="26" column="84" lean-forward="true" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,31 +110,31 @@
         <option value="$PROJECT_DIR$/src/jnaex/Tests/GoodSyncConnect/GoodSyncConnectTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/jnaex/Run/RunAllTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/testLogger/TestLogger.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/NewGoodSyncJobWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/NewGroupWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/mmarquee/automation/uiautomation/ExpandCollapseState.java" />
         <option value="$PROJECT_DIR$/src/main/java/daima/DElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/GroupContextMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneTree.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/DialogWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/RenameWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/CloneWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/AllContextMenu.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/JobOptions/JobOptions.java" />
         <option value="$PROJECT_DIR$/src/test/java/window/LogWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/ToolsContextMenu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ToolsContextClasses/RunnerServiceSetup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tools/Elem.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/GeneralTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java" />
-        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java" />
         <option value="$PROJECT_DIR$/src/test/java/ApplicationRunHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/testClass.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Tools/Elem.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/ToolsContextMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/AllContextMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/GroupContextMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneTree.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/GeneralTab.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/ToolsContextClasses/RunnerServiceSetup.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/CloneWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/NewGoodSyncJobWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/NewGroupWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/window/RenameWindow.java" />
         <option value="$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java" />
       </list>
     </option>
@@ -200,40 +165,6 @@
             <path>
               <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GS Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gs-win-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -557,31 +488,31 @@
       <option name="project" value="LOCAL" />
       <updated>1523270354697</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="04/09/18 Working on start up application and init phase">
+      <created>1523278218864</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523278218864</updated>
+    </task>
+    <task id="LOCAL-00009" summary="04/09/18 Finding elements on Object creation is wrapped with try catch for every element - it will increase problem debuging on element not found during object creation.">
+      <created>1523294255570</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523294255570</updated>
+    </task>
+    <task id="LOCAL-00010" summary="04/09/18 Minor fixing">
+      <created>1523294617706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1523294617706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testClass - 2018.04.09 at 03h 53m 13s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 03h 55m 27s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 04m 42s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 10m 43s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 16m 41s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 19m 39s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="testClass - 2018.04.09 at 05h 23m 45s.xml">
-      <configuration name="testClass" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="testClass - 2018.04.09 at 05h 26m 34s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
@@ -591,9 +522,31 @@
     <history-entry file="testClass - 2018.04.09 at 05h 28m 41s.xml">
       <configuration name="testClass" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 05h 47m 07s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 15m 04s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 15m 30s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 20m 20s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 37m 42s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 43m 47s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="testClass - 2018.04.09 at 11h 45m 21s.xml">
+      <configuration name="testClass" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -603,7 +556,7 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5149095" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25170067" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48509052" weight="0.27891156" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
@@ -634,7 +587,9 @@
     <MESSAGE value="03/20/2018 Added Maven support. Moved JNA, javax.mail and other dependencies to maven." />
     <MESSAGE value="04/03/18 further implementation of Page object pattern" />
     <MESSAGE value="04/09/18 Working on start up application and init phase" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/09/18 Working on start up application and init phase" />
+    <MESSAGE value="04/09/18 Finding elements on Object creation is wrapped with try catch for every element - it will increase problem debuging on element not found during object creation." />
+    <MESSAGE value="04/09/18 Minor fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/09/18 Minor fixing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,43 +600,17 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#JobContextMenu#0;class#JobContextMenu#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daima/DElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="64" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/window/RenameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -705,7 +634,6 @@
           <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#JobContextMenu#0;class#JobContextMenu#0" />
           </folding>
         </state>
       </provider>
@@ -783,98 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1632">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/NewGoodSyncJobWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/GroupContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/RenameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/CloneWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/AllContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jnaex/Tests/GoodSyncConnect/GoodSyncConnectTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="43">
           <caret line="199" column="23" selection-start-line="199" selection-start-column="23" selection-end-line="199" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/LogWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ToolsContextClasses/RunnerServiceSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/ToolsContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/GeneralTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#JobContextMenu#0;class#JobContextMenu#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -892,16 +732,6 @@
           <folding>
             <element signature="e#15711#15712#0" expanded="true" />
             <element signature="e#15747#15748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Elem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="method#setCheckBoxToValue#0;class#Elem#0" />
           </folding>
         </state>
       </provider>
@@ -941,41 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/daima/DElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="350" selection-start-line="350" selection-end-line="350" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/window/JobOptions/JobOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -990,16 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4539">
-          <caret line="273" column="52" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1024,20 +813,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/WinRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="52" column="116" lean-forward="true" selection-start-line="52" selection-start-column="116" selection-end-line="52" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WebTools/MediatorPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/ToolsContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/AllContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/GroupContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ContextMenu/JobContextMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/JobOptions/JobOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/LeftPane/LeftPaneTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/AutoTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#incrementAutoRunJobsInParallel#0;class#AutoTab#0" />
+            <element signature="method#decrementAutoRunJobsInParallel#0;class#AutoTab#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/GeneralTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ProgramOptions/ProgramOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/ToolsContextClasses/RunnerServiceSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/CloneWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/LogWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/daima/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/NewGoodSyncJobWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/NewGroupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/RenameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/GoodSyncConnectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/window/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="78" lean-forward="true" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tools/Elem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Helpers/ApplicationRunHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="204">
+          <caret line="26" column="84" lean-forward="true" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/testClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

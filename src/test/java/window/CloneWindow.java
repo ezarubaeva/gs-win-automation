@@ -12,13 +12,26 @@ public class CloneWindow extends Elem {
     private DElement cancelBtn;
 
     public CloneWindow(){
+        super();
         try {
             clone = g(mainWindow, "", 1, "N", "Clone Job");
+        } catch (Exception e) {
+            throw new Error("Can not find element Clone job");
+        }
+        try {
             jobNameInputField = g(clone, "", 1, "N", "Enter Job Name");
+        } catch (Exception e) {
+            throw new Error("Can not find element Enter job name field");
+        }
+        try {
             okBtn = g(clone, "", 1, "N", "OK");
+        } catch (Exception e) {
+            throw new Error("Can not find element Ok btn");
+        }
+        try {
             cancelBtn = g(clone, "", 1, "N", "Cancel");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find element cancel btn");
         }
     }
 

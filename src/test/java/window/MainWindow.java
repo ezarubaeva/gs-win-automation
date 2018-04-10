@@ -6,6 +6,7 @@ import window.ContextMenu.AllContextMenu;
 import window.ContextMenu.GroupContextMenu;
 import window.ContextMenu.JobContextMenu;
 import window.ContextMenu.ToolsContextMenu;
+import window.LeftPane.LeftPaneTree;
 
 public class MainWindow extends Elem {
 
@@ -31,23 +32,70 @@ public class MainWindow extends Elem {
     public MainWindow(){
         super();
         try {
-            mainWindow.setForeground ();
-            // some elements are not here cuz they depend on left pane\tree selection
             newJobButton = g(mainWindow, "New Job Button", 2, "N", "New Job");
+        } catch (Exception e) {
+            throw new Error("Can not find element New Job button");
+        }
+        try {
             newGroupButton = g(mainWindow, "New Group Button", 2, "N", "New Group");
+        } catch (Exception e) {
+            throw new Error("Can not find element New group button");
+        }
+        try {
             autoRunButton = g(mainWindow, "Auto Run On/Off Button", 2, "N", "AutoRun ");
+        } catch (Exception e) {
+            throw new Error("can not find element Auto run on/off button");
+        }
+        try {
             analyzeButton =  g(mainWindow, "Analyze Button", 2, "N", "Analyze");
+        } catch (Exception e) {
+            throw new Error("Can not find element Analyze button");
+        }
+        try {
             syncButton = g(mainWindow, "Sync Button", 2, "N", "Sync");
+        } catch (Exception e) {
+            throw new Error("Can not find element Sync button");
+        }
+        try {
             moreLink = g(mainWindow, "More Button", 2, "N", "More");
-            DElement toolbar = g(mainWindow, "", 1, "a", "48151623");
+        } catch (Exception e) {
+            throw new Error("can not find element More button");
+        }
+        DElement toolbar = null;
+        try {
+            toolbar = g(mainWindow, "", 1, "a", "48151623");
+        } catch (Exception e) {
+            throw new Error("Can not find element toolbar");
+        }
+        try {
             jobToolBar = g(toolbar, "", 1, "N", "Job");
+        } catch (Exception e) {
+            throw new Error("can not find element job in toolbar");
+        }
+        try {
             allToolBar = g(toolbar, "", 1, "N", "All");
+        } catch (Exception e) {
+            throw new Error("can not find element All in toolbar");
+        }
+        try {
             viewToolBar = g(toolbar, "", 1, "N", "View");
+        } catch (Exception e) {
+            throw new Error("can not find element view in toolbar");
+        }
+        try {
             actionToolBar = g(toolbar, "", 1, "N", "Action");
+        } catch (Exception e) {
+            throw new Error("can not find element action in toolbar");
+        }
+        try {
             toolsToolBar = g(toolbar, "", 1, "N", "Tools");
+        } catch (Exception e) {
+            throw new Error("can not find element tools in toolbar");
+        }
+        try {
             helpToolBar = g(toolbar, "", 1, "N", "Help");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("can not find element help in toolbar");
         }
     }
 
@@ -55,7 +103,7 @@ public class MainWindow extends Elem {
         try {
             changeDirections = g(mainWindow, "Change Directions and other settings", 2, "N", "Change job direction and other settings");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element change directions and other settings");
         }
         return changeDirections;
     }
@@ -64,7 +112,7 @@ public class MainWindow extends Elem {
         try {
             rightSideBrowseDlg = g(mainWindow, "Right Side Browse Dialog", 2, "N", "Right Side");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("can not find Right side browse dialog");
         }
         return rightSideBrowseDlg;
     }
@@ -73,7 +121,7 @@ public class MainWindow extends Elem {
         try {
             leftSideBrowseDlg = g(mainWindow, "Left Side Browse Dialog", 2, "N", "Left Side");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element Left Side browse dialog");
         }
         return leftSideBrowseDlg;
     }
@@ -83,7 +131,7 @@ public class MainWindow extends Elem {
         try {
             autoButton = g(mainWindow, "Auto Options Button", 2, "N", "Auto");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element Auto options button");
         }
         return autoButton;
     }
@@ -92,7 +140,7 @@ public class MainWindow extends Elem {
         try {
             optionsButton = g(mainWindow, "Options Button", 2, "N", "Options");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element Options button");
         }
         return optionsButton;
     }
@@ -102,7 +150,7 @@ public class MainWindow extends Elem {
         try {
             allJobsTree = g(mainWindow, "All Jobs Tree Node", 1, "dN", "All Jobs");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element All jobs tree node");
         }
         return allJobsTree;
     }

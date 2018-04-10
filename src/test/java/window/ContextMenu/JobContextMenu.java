@@ -24,24 +24,81 @@ public class JobContextMenu extends Elem {
     DElement exit;
 
     public JobContextMenu() {
+        super();
         try {
             analyze = g(mainWindow, "", 1, "N", "Analyze");
+        } catch (Exception e) {
+            throw  new Error("Can not find element Job context-> analyze");
+        }
+        try {
             synchronyze = g(mainWindow, "", 1,"N", "Synchronize");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> synchronize");
+        }
+        try {
             analyzeAndSync = g(mainWindow, "", 1, "N", "Analyze and Sync");
+        } catch (Exception e) {
+            throw new Error("can not find element Job context -> analyze and sync");
+        }
+        try {
             clear = g(mainWindow, "", 1, "N", "Clear");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> clear");
+        }
+        try {
             pause = g(mainWindow, "", 1, "N", "Pause");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> pause");
+        }
+        try {
             options = g(mainWindow, "", 1, "N", "Options...");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> options...");
+        }
+        try {
             logsOnLeftSide = g(mainWindow, "", 1, "N", "Logs on Left Side");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> logs on left side");
+        }
+        try {
             logsOnRightSide = g(mainWindow, "", 1, "N", "Logs on Right Side");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> logs on right side");
+        }
+        try {
             groups = g(mainWindow, "", 1, "N", "Groups");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> groups");
+        }
+        try {
             neW = g(mainWindow, "", 1, "N", "New");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> new");
+        }
+        try {
             delete = g(mainWindow, "", 1, "N", "Delete");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> delete");
+        }
+        try {
             rename = g(mainWindow, "", 1, "N", "Rename...");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> rename...");
+        }
+        try {
             clone = g(mainWindow, "", 1, "N", "Clone...");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> clone...");
+        }
+        try {
             advanced = g(mainWindow, "", 1, "N", "Advanced");
+        } catch (Exception e) {
+            throw new Error("Can not find element Job context -> advanced");
+        }
+        try {
             exit = g(mainWindow, "", 1, "N", "Exit");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find element Job context -> exit");
         }
     }
 

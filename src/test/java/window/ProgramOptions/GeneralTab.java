@@ -13,17 +13,47 @@ public class GeneralTab extends Elem {
     private DElement addGoodSyncShortcutDesktop;
 
     public GeneralTab(){
+        super();
+        DElement prOptions = null;
         try {
-            DElement prOptions = g(mainWindow, "", 1, "da", "76937328");
+            prOptions = g(mainWindow, "", 1, "da", "76937328");
+        } catch (Exception e) {
+            throw new Error("Can not find element program options wnd");
+        }
+        try {
             noAnimationOnAnalyzecheckBox = g(prOptions, "", 1, "N", "No animations on Analyze");
+        } catch (Exception e) {
+            throw new Error("Can not find element No animation on analyze checkbox");
+        }
+        try {
             sortJobNamesByAlphabet = g(prOptions, "", 1, "N", "Sort job names by alphabet (restart required)");
+        } catch (Exception e) {
+            throw new Error("Can not find element Sort job names by alphabet");
+        }
+        try {
             showBackUpSyncJobGroups = g(prOptions, "", 1, "N", "Show Backup / Sync Jobs groups (restart required)");
+        } catch (Exception e) {
+            throw new Error("Can not find element Show backup/sync jobs groups");
+        }
+        try {
             showGoodSyncIconInSysTray = g(prOptions, "", 1, "N", "Show GoodSync icon in system tray.");
+        } catch (Exception e) {
+            throw new Error("Can not find element Show goodsync icon in sys tray");
+        }
+        try {
             hideToSysTrayMainClosed = g(prOptions, "", 1, "N", "Hide to System Tray when Main Window is closed.");
+        } catch (Exception e) {
+            throw new Error("Can not find element Hide to sys tray when main is closed");
+        }
+        try {
             startGSwhenWinStarts = g(prOptions, "", 1, "N", "Start GoodSync when Windows starts.");
+        } catch (Exception e) {
+            throw new Error("Can not find element start GS when windows starts");
+        }
+        try {
             addGoodSyncShortcutDesktop = g(prOptions, "", 1, "N", "Add GoodSync shortcut to desktop");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find element Add GS shortcut to desktop");
         }
     }
 

@@ -11,10 +11,11 @@ public class LeftPaneTree extends Elem {
     private DElement syncJobs;
 
     public LeftPaneTree(){
+        super();
         try {
             allJobs = g(mainWindow, "All Jobs Tree", 1, "dN", "All Jobs");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element All jobs tree");
         }
     }
 
@@ -52,7 +53,7 @@ public class LeftPaneTree extends Elem {
         try {
             backupJobs = g(mainWindow, "Back Up Job", 1, "dN", "Backup Jobs");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element Backup Jobs in tree");
         }
         return backupJobs;
     }
@@ -61,7 +62,7 @@ public class LeftPaneTree extends Elem {
         try {
             syncJobs = g(mainWindow, "Sync Jobs", 1, "dN", "Sync Jobs");
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Can not find element Sync jobs in tree");
         }
         return syncJobs;
     }
@@ -125,31 +126,46 @@ public class LeftPaneTree extends Elem {
     }
 
     public LeftPaneTree selectElement(String _element){
+        DElement element;
         try {
-            DElement element = g(mainWindow, "Select Element", 1, "dN", _element);
+                element = g(mainWindow, "Select Element", 1, "dN", _element);
+            } catch (Exception ex){
+                throw new Error("Can not find element:" + _element);
+            }
+        try {
             element.click();
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Error on clicking element: " + _element + ". " + e.getCause());
         }
         return this;
     }
 
     public JobContextMenu callJobContextMenu(String _jobName){
+        DElement job = null;
         try {
-            DElement job = g(mainWindow, "", 1, "dN", _jobName);
+            job = g(mainWindow, "", 1, "dN", _jobName);
+        } catch (Exception e) {
+            throw new Error("Can not find element: " + _jobName);
+        }
+        try {
             job.contextClick();
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Error on context click on: " + _jobName + ". " + e.getCause());
         }
         return new JobContextMenu();
     }
 
     public GroupContextMenu callGroupContextMenu(String _groupName){
+        DElement group = null;
         try {
-            DElement group = g(mainWindow, "", 1, "dN", _groupName);
+            group = g(mainWindow, "", 1, "dN", _groupName);
+        } catch (Exception e) {
+            throw new Error("Can not find element: " + _groupName);
+        }
+        try {
             group.contextClick();
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error("Error on context click on: " + _groupName + ". " + e.getCause());
         }
         return new GroupContextMenu();
     }

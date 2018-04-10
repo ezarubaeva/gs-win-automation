@@ -11,7 +11,7 @@ public class Elem {
             //mainWindow = g(null, "GoodSync Main Window", 1, "N", "GoodSync -");
             mainWindow = g(null, "GoodSync Main Window", 1, "C", "{B26B00DA-2E5D-4CF2-83C5-911198C0F009}");
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Can not find GoodSync window element");
         }
     }
     public static DElement g(DElement _parent, String _dn, int _a, String _x, String..._xx) throws Exception{
