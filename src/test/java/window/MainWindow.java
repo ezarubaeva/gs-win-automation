@@ -29,119 +29,119 @@ public class MainWindow extends Elem {
     private DElement toolsToolBar;
     private DElement helpToolBar;
 
-    public MainWindow(){
-        super();
+    public MainWindow() {
+        super ();
         try {
-            newJobButton = g(mainWindow, "New Job Button", 2, "N", "New Job");
+            newJobButton = g ( mainWindow, "New Job Button", 2, "N", "New Job" );
         } catch (Exception e) {
-            throw new Error("Can not find element New Job button");
+            throw new Error ( "Can not find element New Job button" );
         }
         try {
-            newGroupButton = g(mainWindow, "New Group Button", 2, "N", "New Group");
+            newGroupButton = g ( mainWindow, "New Group Button", 2, "N", "New Group" );
         } catch (Exception e) {
-            throw new Error("Can not find element New group button");
+            throw new Error ( "Can not find element New group button" );
         }
         try {
-            autoRunButton = g(mainWindow, "Auto Run On/Off Button", 2, "N", "AutoRun ");
+            autoRunButton = g ( mainWindow, "Auto Run On/Off Button", 2, "N", "AutoRun " );
         } catch (Exception e) {
-            throw new Error("can not find element Auto run on/off button");
+            throw new Error ( "can not find element Auto run on/off button" );
         }
         try {
-            analyzeButton =  g(mainWindow, "Analyze Button", 2, "N", "Analyze");
+            analyzeButton = g ( mainWindow, "Analyze Button", 2, "N", "Analyze" );
         } catch (Exception e) {
-            throw new Error("Can not find element Analyze button");
+            throw new Error ( "Can not find element Analyze button" );
         }
         try {
-            syncButton = g(mainWindow, "Sync Button", 2, "N", "Sync");
+            syncButton = g ( mainWindow, "Sync Button", 2, "N", "Sync" );
         } catch (Exception e) {
-            throw new Error("Can not find element Sync button");
+            throw new Error ( "Can not find element Sync button" );
         }
         try {
-            moreLink = g(mainWindow, "More Button", 2, "N", "More");
+            moreLink = g ( mainWindow, "More Button", 2, "N", "More" );
         } catch (Exception e) {
-            throw new Error("can not find element More button");
+            throw new Error ( "can not find element More button" );
         }
 
         DElement toolbar = null;
         try {
-            toolbar = g(mainWindow, "Main GS toolbar", 3, "a", "48151623");
+            toolbar = g ( mainWindow, "Main GS toolbar", 3, "a", "48151623" );
         } catch (Exception e) {
-            throw new Error("Can not find element toolbar");
+            throw new Error ( "Can not find element toolbar" );
         }
         try {
-            jobToolBar = g(toolbar, "Job ToolBar", 3, "N", "Job");
+            jobToolBar = g ( toolbar, "Job ToolBar", 3, "N", "Job" );
         } catch (Exception e) {
-            throw new Error("can not find element job in toolbar");
+            throw new Error ( "can not find element job in toolbar" );
         }
         try {
-            allToolBar = g(toolbar, "All ToolBar", 3, "N", "All");
+            allToolBar = g ( toolbar, "All ToolBar", 3, "N", "All" );
         } catch (Exception e) {
-            throw new Error("can not find element All in toolbar");
+            throw new Error ( "can not find element All in toolbar" );
         }
         try {
-            viewToolBar = g(toolbar, "View ToolBar", 3, "N", "View");
+            viewToolBar = g ( toolbar, "View ToolBar", 3, "N", "View" );
         } catch (Exception e) {
-            throw new Error("can not find element view in toolbar");
+            throw new Error ( "can not find element view in toolbar" );
         }
         try {
-            actionToolBar = g(toolbar, "Action ToolBar", 3, "N", "Action");
+            actionToolBar = g ( toolbar, "Action ToolBar", 3, "N", "Action" );
         } catch (Exception e) {
-            throw new Error("can not find element action in toolbar");
+            throw new Error ( "can not find element action in toolbar" );
         }
         try {
-            toolsToolBar = g(toolbar, "Tools ToolBar", 3, "N", "Tools");
+            toolsToolBar = g ( toolbar, "Tools ToolBar", 3, "N", "Tools" );
         } catch (Exception e) {
-            throw new Error("can not find element tools in toolbar");
+            throw new Error ( "can not find element tools in toolbar" );
         }
         try {
-            helpToolBar = g(toolbar, "Help ToolBar", 3, "N", "Help");
+            helpToolBar = g ( toolbar, "Help ToolBar", 3, "N", "Help" );
         } catch (Exception e) {
-            throw new Error("can not find element help in toolbar");
+            throw new Error ( "can not find element help in toolbar" );
         }
     }
 
-    public DElement getChangeDirections(){
+    public DElement getChangeDirections() {
         try {
-            changeDirections = g(mainWindow, "Change Directions and other settings", 2, "N", "Change job direction and other settings");
+            changeDirections = g ( mainWindow, "Change Directions and other settings", 2, "N", "Change job direction and other settings" );
         } catch (Exception e) {
-            throw new Error("Can not find element change directions and other settings");
+            throw new Error ( "Can not find element change directions and other settings" );
         }
         return changeDirections;
     }
 
-    public DElement getRightSideBrwsDlg(){
+    public DElement getRightSideBrwsDlg() {
         try {
-            rightSideBrowseDlg = g(mainWindow, "Right Side Browse Dialog", 2, "N", "Right Side");
+            rightSideBrowseDlg = g ( mainWindow, "Right Side Browse Dialog", 2, "N", "Right Side" );
         } catch (Exception e) {
-            throw new Error("can not find Right side browse dialog");
+            throw new Error ( "can not find Right side browse dialog" );
         }
         return rightSideBrowseDlg;
     }
 
-    public DElement getLeftSideBrwsDlg(){
+    public DElement getLeftSideBrwsDlg() {
         try {
-            leftSideBrowseDlg = g(mainWindow, "Left Side Browse Dialog", 2, "N", "Left Side");
+            leftSideBrowseDlg = g ( mainWindow, "Left Side Browse Dialog", 2, "N", "Left Side" );
         } catch (Exception e) {
-            throw new Error("Can not find element Left Side browse dialog");
+            throw new Error ( "Can not find element Left Side browse dialog" );
         }
         return leftSideBrowseDlg;
     }
 
 
-    public DElement getAutoBtn(){
+    public DElement getAutoBtn() {
         try {
-            autoButton = g(mainWindow, "Auto Options Button", 2, "N", "Auto");
+            autoButton = g ( mainWindow, "Auto Options Button", 2, "N", "Auto" );
         } catch (Exception e) {
-            throw new Error("Can not find element Auto options button");
+            throw new Error ( "Can not find element Auto options button" );
         }
         return autoButton;
     }
 
-    public DElement getOptionsBtn(){
+    public DElement getOptionsBtn() {
         try {
-            optionsButton = g(mainWindow, "Options Button", 2, "N", "Options");
+            optionsButton = g ( mainWindow, "Options Button", 2, "N", "Options" );
         } catch (Exception e) {
-            throw new Error("Can not find element Options button");
+            throw new Error ( "Can not find element Options button" );
         }
         return optionsButton;
     }
@@ -149,66 +149,65 @@ public class MainWindow extends Elem {
 
     public DElement getAllJobsTree() {
         try {
-            allJobsTree = g(mainWindow, "All Jobs Tree Node", 1, "dN", "All Jobs");
+            allJobsTree = g ( mainWindow, "All Jobs Tree Node", 1, "dN", "All Jobs" );
         } catch (Exception e) {
-            throw new Error("Can not find element All jobs tree node");
+            throw new Error ( "Can not find element All jobs tree node" );
         }
         return allJobsTree;
     }
 
     public NewGoodSyncJobWindow clickNewJobButton() {
         try {
-            newJobButton.clickMM();
+            newJobButton.clickMM ();
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error ( e.getMessage () );
         }
-        return new NewGoodSyncJobWindow();
+        return new NewGoodSyncJobWindow ();
     }
 
-    public NewGroupWindow clickNewGroupBtn(){
+    public NewGroupWindow clickNewGroupBtn() {
         try {
-            newGroupButton.clickMM();
+            newGroupButton.clickMM ();
         } catch (Exception e) {
-            throw new Error(e.getMessage());
+            throw new Error ( e.getMessage () );
         }
-        return new NewGroupWindow();
+        return new NewGroupWindow ();
     }
 
-    public JobContextMenu clickJobToolBarMenuForJob(){
+    public JobContextMenu clickJobToolBarMenuForJob() {
         try {
-            jobToolBar.click();
+            jobToolBar.click ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
-        return new JobContextMenu();
+        return new JobContextMenu ();
     }
 
-    public GroupContextMenu clickJobToolBarMenuForGroup(){
+    public GroupContextMenu clickJobToolBarMenuForGroup() {
         try {
-            jobToolBar.click();
+            jobToolBar.click ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
-        return new GroupContextMenu();
+        return new GroupContextMenu ();
     }
 
-    public AllContextMenu clickAllToolBarMenu(){
+    public AllContextMenu clickAllToolBarMenu() {
         try {
-            allToolBar.click();
+            allToolBar.click ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
-        return new AllContextMenu();
+        return new AllContextMenu ();
     }
 
     public ToolsContextMenu clickToolsToolBarMenu() throws Exception {
         try {
-            toolsToolBar.click();
+            toolsToolBar.click ();
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace ();
         }
-        return new ToolsContextMenu();
+        return new ToolsContextMenu ();
     }
-
-
 }
+

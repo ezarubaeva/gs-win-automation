@@ -1,38 +1,39 @@
 package window.GoodSyncConnect;
-import Helpers.ApplicationRunHandler;
 import Tools.Elem;
 import WebTools.MediatorPage;
 import daima.DElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import window.MainWindow;
 
 import java.io.IOException;
 import java.util.Random;
 
 public class GoodSyncConnectWindow extends Elem {
+    public DElement gsW;
 
-    ApplicationRunHandler app;
-    public MainWindow mainWindow;
-
-    //@BeforeClass
-    public void GoodSyncConnectWindow() throws IOException, InterruptedException {
-        app = new ApplicationRunHandler();
-        app.runGoodSyncApp();
-        mainWindow = new MainWindow();
+    public void GoodSyncConnectWindow() throws Exception {
+        try {
+            gsW = g ( null, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 3, "ln", "window", "GoodSync Connect Setup" );
+        } catch (Exception e) {
+            throw new Error ( "Can not find GoodSyncConnectWindow in 3 sec" );
+        }
     }
 
-    //@AfterClass
-    public void afterClass(){
-        app.closeGoodSyncApp();
+    public void setupLocal() throws Exception {
+        try {
+            chooseMode ( "no" );
+            DElement wrk = g ( gsW, "Text: Local Only mode", 1, "lN", "text", "Local Only mode" );
+            clickApply ();
+            //wrk = g ( gsW, "Text: Committing", 10, "UlN", "100", "text", "Committing" );
+            DElement.gimMeP ( null, "setupLocal: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
+        } catch (Exception e) {
+            throw new Error ( "Error in setupLocal: Local Mode was not set" );
+        }
     }
 
     public void setupNewAccount( String windowsPassword) throws Exception {
-        callSetup ();
         chooseMode ( "yes" );
-        DElement gsW = g ( null, "setupNewAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
         DElement wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Create a new GoodSync Connect Account" );
         wrk.click ();
 
@@ -50,14 +51,14 @@ public class GoodSyncConnectWindow extends Elem {
         wrk = g ( gsW, "GS Account Email = " + gsUser, 1, "ln", "edit", "Your Name" );
         wrk.setEditValue ( gsUser );
 
-        clickNext (gsW);
+        clickNext ();
 
         // Do not change windows user for now
         wrk = g ( gsW, "Edit: Windows Password", 2, "lN", "edit", "Windows User" );
         wrk.setEditValue (System.getProperty("user.name"));
         wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
         wrk.setEditValue ( windowsPassword );
-        clickNext (gsW);
+        clickNext ();
 
         sleep (1);
         verifyServerMode("gs_qa" + tail, gsEmail);
@@ -70,55 +71,45 @@ public class GoodSyncConnectWindow extends Elem {
         MediatorPage.deleteGSUser (driverBrowser, gsUser, gsPassword);
     }
 
-    public void clickNext(DElement gsW) {
+    public void clickNext() {
         try {
             DElement wrk = g ( gsW, "Clicking Button Next", 1, "ln", "button", "Next >" );
             wrk.click ();
             sleep ( 1 );
         } catch (Exception e) {
-            e.printStackTrace ();
+            throw new Error("clickNext: cannot click Next button in Configure GoodSync Connect window");
         }
     }
 
-    public void clickApply(DElement gsW) {
-        //DElement gsW = null;
+    public void clickApply () {
         try {
             DElement wrk = g ( gsW, "Clicking Button Apply", 1, "ln", "button", "Apply" );
             wrk.click ();
             sleep ( 1 );
         } catch (Exception e) {
-            e.printStackTrace ();
+            throw new Error("clickApply: cannot click Apply button in Configure GoodSync Connect window");
         }
     }
 
     public void chooseMode(String mode) throws Exception {
-        DElement gsW = g ( null, "chooseMode: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
-        DElement wrk;
-        if (mode.equals ( "yes" )) {
-            wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
-        } else {
-            wrk = g ( gsW, "Radio button No", 1, "lN", "radio button", "No, do not setup GoodSync Connect" );
-        }
-
-        wrk.click ();
-        clickNext (gsW);
-    }
-
-    public void callSetup() throws Exception {
         try {
-            mainWindow.clickToolsToolBarMenu ();
-            DElement wrk = g ( null, "callSetup: Tools items", 3, "n", "Context" );
-            wrk = g ( wrk, "Tools > GoodSync Connect Setup menu item", 1, "n", "GoodSync Connect Setup..." );
+            DElement gsWin = g ( null, "chooseMode: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
+            DElement wrk;
+            if (mode.equals ( "yes" )) {
+                wrk = g ( gsWin, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
+            } else {
+                wrk = g ( gsWin, "Radio button No", 1, "lN", "radio button", "No, do not setup GoodSync Connect" );
+            }
+
             wrk.click ();
-            sleep ( 1 );
+            clickNext ();
         } catch (Exception e) {
-            e.printStackTrace ();
+            throw new Error("chooseMode: cannot choose mode in Configure GoodSync Connect window");
         }
     }
 
     public void verifyServerMode(String gsUser, String gsEmail) throws Exception {
         try {
-            DElement gsW = g ( null, "verifyServerMode: GoodSync Connect Setup window", 1, "lN", "window", "GoodSync Connect Setup" );
             DElement wrk = g ( gsW, "Result text - sever label", 1, "lN", "text", "GoodSync Connect: Server Mode" );
 
             String gstp_Address = "." + gsUser + "-siber-com.goodsync";
@@ -132,7 +123,7 @@ public class GoodSyncConnectWindow extends Elem {
             wrk = g ( gsW, "Result text - label Auth User", 1, "lN", "text", "Auth User:" );
             wrk = g ( gsW, "Result text - label Auth Name", 1, "lN", "text", "Auth Name:" );
 
-            clickApply (gsW);
+            clickApply ();
             DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
         } catch (Exception e) {
             e.printStackTrace ();
@@ -141,12 +132,11 @@ public class GoodSyncConnectWindow extends Elem {
 
     public void configureGSAccount(String gsUser, String password) throws Exception {
         try {
-            DElement gsW = g ( null, "configureGSAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
             DElement wrk = g ( gsW, "Text - UserId or Email", 2, "n", "UserId or Email" );
             wrk.setEditValue ( gsUser );
             wrk = g ( gsW, "Text - Password", 2, "n", "Password" );
             wrk.setEditValue ( password );
-            clickNext (gsW);
+            clickNext ();
 
             sleep (2);
 
