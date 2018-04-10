@@ -61,39 +61,40 @@ public class MainWindow extends Elem {
         } catch (Exception e) {
             throw new Error("can not find element More button");
         }
+
         DElement toolbar = null;
         try {
-            toolbar = g(mainWindow, "", 1, "a", "48151623");
+            toolbar = g(mainWindow, "Main GS toolbar", 3, "a", "48151623");
         } catch (Exception e) {
             throw new Error("Can not find element toolbar");
         }
         try {
-            jobToolBar = g(toolbar, "", 1, "N", "Job");
+            jobToolBar = g(toolbar, "Job ToolBar", 3, "N", "Job");
         } catch (Exception e) {
             throw new Error("can not find element job in toolbar");
         }
         try {
-            allToolBar = g(toolbar, "", 1, "N", "All");
+            allToolBar = g(toolbar, "All ToolBar", 3, "N", "All");
         } catch (Exception e) {
             throw new Error("can not find element All in toolbar");
         }
         try {
-            viewToolBar = g(toolbar, "", 1, "N", "View");
+            viewToolBar = g(toolbar, "View ToolBar", 3, "N", "View");
         } catch (Exception e) {
             throw new Error("can not find element view in toolbar");
         }
         try {
-            actionToolBar = g(toolbar, "", 1, "N", "Action");
+            actionToolBar = g(toolbar, "Action ToolBar", 3, "N", "Action");
         } catch (Exception e) {
             throw new Error("can not find element action in toolbar");
         }
         try {
-            toolsToolBar = g(toolbar, "", 1, "N", "Tools");
+            toolsToolBar = g(toolbar, "Tools ToolBar", 3, "N", "Tools");
         } catch (Exception e) {
             throw new Error("can not find element tools in toolbar");
         }
         try {
-            helpToolBar = g(toolbar, "", 1, "N", "Help");
+            helpToolBar = g(toolbar, "Help ToolBar", 3, "N", "Help");
         } catch (Exception e) {
             throw new Error("can not find element help in toolbar");
         }
@@ -200,7 +201,7 @@ public class MainWindow extends Elem {
         return new AllContextMenu();
     }
 
-    public ToolsContextMenu clickToolsToolBarMenu(){
+    public ToolsContextMenu clickToolsToolBarMenu() throws Exception {
         try {
             toolsToolBar.click();
         } catch (Exception e) {
