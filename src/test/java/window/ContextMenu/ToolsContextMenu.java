@@ -17,9 +17,14 @@ public class ToolsContextMenu extends Elem {
     private DElement exportSelectedJobs;
     private DElement importJobList;
 
-    public ToolsContextMenu() throws Exception {
+    public ToolsContextMenu() {
         super();
-        DElement parentMenu = g(null, "Whole menu - Tools", 1, "lN", "menu", "Context");
+        DElement parentMenu = null;
+        try {
+            parentMenu = g(null, "Whole menu - Tools", 1, "lN", "menu", "Context");
+        } catch (Exception e) {
+            throw new Error("Can not find element Whole menu -> Tools: " + e.getMessage());
+        }
         try {
             programOptions = g(parentMenu, "Tools -> Program options", 1, "lN", "menu item", "Program Options...");
         } catch (Exception e) {
@@ -76,7 +81,7 @@ public class ToolsContextMenu extends Elem {
         return new ProgramOptions();
     }
 
-    public GoodSyncConnectWindow selectGSconnectSetup() throws Exception {
+    public GoodSyncConnectWindow selectGSconnectSetup(){
         try {
             goodsyncConnectSetup.click();
         } catch (Exception e) {

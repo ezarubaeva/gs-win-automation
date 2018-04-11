@@ -10,17 +10,18 @@ import java.io.IOException;
 import java.util.Random;
 
 public class GoodSyncConnectWindow extends Elem {
-    public DElement gsW;
+    private DElement gsW;
 
-    public void GoodSyncConnectWindow() throws Exception {
+    public GoodSyncConnectWindow() {
         try {
-            gsW = g ( null, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 3, "ln", "window", "GoodSync Connect Setup" );
+            gsW = g ( null, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 5, "dlN",
+                    "window", "GoodSync Connect Setup" );
         } catch (Exception e) {
-            throw new Error ( "Can not find GoodSyncConnectWindow in 3 sec" );
+            throw new Error ( "Can not find GoodSyncConnectWindow in 3 sec: " + e.getMessage() );
         }
     }
 
-    public void setupLocal() throws Exception {
+    public void setupLocal() {
         try {
             chooseMode ( "no" );
             DElement wrk = g ( gsW, "Text: Local Only mode", 1, "lN", "text", "Local Only mode" );
@@ -70,21 +71,47 @@ public class GoodSyncConnectWindow extends Elem {
         }
     }
 
-    public void setupExistingAccount(String windowsPassword) throws Exception {
+    public void setupExistingAccount(String windowsPassword) {
+        DElement gsW = null;
         try {
-            DElement gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "dN", "GoodSync Connect Setup" );
+        } catch (Exception e) {
+            throw new Error("Can not find element GoodSync Connect Setup Wnd: " + e.getMessage());
+        }
+        try {
             configureGSAccount ( "testbot", "testbot" );
+        } catch (Exception e) {
+            throw new Error("Error on configuring GS Account: " + e.getMessage());
+        }
 
-            // Do not change windows user for now
-            DElement wrk = g ( gsW, "Edit: Windows User", 3, "lN", "edit", "Windows User" );
+        // Do not change windows user for now
+        DElement wrk = null;
+        try {
+            wrk = g ( gsW, "Edit: Windows User", 3, "lN", "edit", "Windows User" );
+        } catch (Exception e) {
+            throw new Error("Can not find element Edit: Windows user: " + e.getMessage());
+        }
+        try {
             wrk.setEditValue (System.getProperty("user.name"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
             wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
+        } catch (Exception e) {
+            throw new Error("Can not find element Edit: Windows password: " + e.getMessage());
+        }
+        try {
             wrk.setEditValue ( windowsPassword );
-            clickNext ();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        clickNext ();
 
+        try {
             verifyServerMode ( "testbot", "gs_qa@siber.com" );
         } catch (Exception e) {
-            throw new Error ( "GoodSync Connect: Existing account was not setup");
+            e.printStackTrace();
         }
     }
 
