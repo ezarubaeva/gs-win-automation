@@ -25,7 +25,7 @@ public class GoodSyncConnectWindow extends Elem {
         }
     }
 
-    public void setupLocal() throws Exception {
+    public void setupLocal() {
         try {
             chooseMode ( "no" );
             DElement wrk = g ( gsW, "Text: Local Only mode", 1, "lN", "text", "Local Only mode" );

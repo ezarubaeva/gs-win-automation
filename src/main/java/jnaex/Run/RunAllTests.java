@@ -22,7 +22,7 @@ public class RunAllTests {
 
         TestSet inst1 = new TestSet("GoodSync Connect Setup");
         TestLogger.addTestSet(inst1);
-        GoodSyncConnect.main(inst1, args);
+        //GoodSyncConnect.main(inst1, args);
 
 //        TestSet file_systems = new TestSet("Create FS Accounts");
 //        TestLogger.addTestSet(file_systems);

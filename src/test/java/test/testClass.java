@@ -15,7 +15,7 @@ public class testClass {
     MainWindow mainWindow;
 
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() throws IOException, InterruptedException {
         app =new ApplicationRunHandler();
         app.runGoodSyncApp();
         mainWindow = new MainWindow();
