@@ -1,20 +1,25 @@
 package window.GoodSyncConnect;
+
 import Tools.Elem;
 import WebTools.MediatorPage;
 import daima.DElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import window.MainWindow;
 
-import java.io.IOException;
 import java.util.Random;
 
 public class GoodSyncConnectWindow extends Elem {
     public DElement gsW;
+    public DElement gsWind;
 
-    public void GoodSyncConnectWindow() throws Exception {
+    public DElement getGsW() {
+        return gsW;
+    }
+
+    public GoodSyncConnectWindow() throws Exception {
         try {
-            gsW = g ( null, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 3, "ln", "window", "GoodSync Connect Setup" );
+            gsWind = g ( null, "GoodSync Main Window :", 3, "C", "{B26B00DA-2E5D-4CF2-83C5-911198C0F009}" );
+            gsW = g ( gsWind, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
         } catch (Exception e) {
             throw new Error ( "Can not find GoodSyncConnectWindow in 3 sec" );
         }
@@ -72,11 +77,12 @@ public class GoodSyncConnectWindow extends Elem {
 
     public void setupExistingAccount(String windowsPassword) throws Exception {
         try {
-            DElement gsW = g ( null, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            chooseMode ( "yes" );
             configureGSAccount ( "testbot", "testbot" );
 
             // Do not change windows user for now
-            DElement wrk = g ( gsW, "Edit: Windows User", 3, "lN", "edit", "Windows User" );
+            gsW = g ( gsWind, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
+            DElement wrk = g ( gsW, "Edit: Windows User", 3, "l", "edit");
             wrk.setEditValue (System.getProperty("user.name"));
             wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
             wrk.setEditValue ( windowsPassword );
@@ -113,9 +119,10 @@ public class GoodSyncConnectWindow extends Elem {
         }
     }
 
-    public void chooseMode(String mode) throws Exception {
+    private public void chooseMode(String mode) throws Exception {
         try {
             DElement wrk;
+            DElement gsW = g ( gsWind, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
             if (mode.equals ( "yes" )) {
                 wrk = g ( gsW, "Radio button Yes", 1, "lN", "radio button", "Yes, connect my computers using GoodSync Connect" );
             } else {
@@ -129,11 +136,11 @@ public class GoodSyncConnectWindow extends Elem {
         }
     }
 
-    public void verifyServerMode(String gsUser, String gsEmail) throws Exception {
+    private void verifyServerMode(String gsUser, String gsEmail) throws Exception {
         try {
             DElement wrk = g ( gsW, "Result text - sever label", 1, "lN", "text", "GoodSync Connect: Server Mode" );
 
-            String gstp_Address = "." + gsUser + "-siber-com.goodsync";
+            String gstp_Address = "." + gsUser + ".goodsync";
             String gstp_Email = "Connect Email: " + gsEmail;
             String gstp_Account = "Connect Account: " + gsUser + "-siber-com";
             wrk = g ( gsW, "Result text - computer label", 1, "lN", "text", "This Computer address: gstp://" );
