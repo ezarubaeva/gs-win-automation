@@ -84,9 +84,9 @@ public class ToolsContextMenu extends Elem {
     public GoodSyncConnectWindow selectGSconnectSetup(){
         try {
             goodsyncConnectSetup.click();
+            return new GoodSyncConnectWindow ();
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new Error("Cannot create new GoodSyncConnectWindow");
         }
-        return new GoodSyncConnectWindow ();
     }
 }
