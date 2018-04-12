@@ -63,7 +63,7 @@ public class GoodSyncConnectTest {
     }
 
     @Test
-    public void setupExistingAccountTest() throws Exception {
+    void setupExistingAccountTest() throws Exception, Error {
         try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             gsConnectWin.setupExistingAccount ("test");
@@ -73,7 +73,7 @@ public class GoodSyncConnectTest {
     }
 
     @Test
-    public void setupNewAccountTest() throws Exception {
+    void setupNewAccountTest() throws Exception {
         try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             gsConnectWin.setupNewAccount ( "test" );
