@@ -142,14 +142,14 @@ public class GoodSyncConnectWindow extends Elem {
 
             String gstp_Address = "." + gsUser + ".goodsync";
             String gstp_Email = "Connect Email: " + gsEmail;
-            String gstp_Account = "Connect Account: " + gsUser + "-siber-com";
-            wrk = g ( gsW, "Result text - computer label", 1, "lN", "text", "This Computer address: gstp://" );
-            wrk = g ( gsW, "Result text - gstp_Address" + gstp_Address, 1, "lN", "text", gstp_Address );
-            wrk = g ( gsW, "Result text - gstp_Email" + gstp_Email, 1, "lN", "text", gstp_Email );
-            wrk = g ( gsW, "Result text - Connect Account" + gstp_Account, 1, "lN", "text", gstp_Account );
-            wrk = g ( gsW, "Result text - label Windows User", 1, "lN", "text", "Windows User:" );
-            wrk = g ( gsW, "Result text - label Auth User", 1, "lN", "text", "Auth User:" );
-            wrk = g ( gsW, "Result text - label Auth Name", 1, "lN", "text", "Auth Name:" );
+            String gstp_Account = "Connect Account: " + gsUser;
+            wrk = g ( gsW, "Result text - computer label: ", 1, "lN", "text", "This Computer address: gstp://" );
+            wrk = g ( gsW, "Result text - gstp_Address: " + gstp_Address, 1, "lN", "text", gstp_Address );
+            wrk = g ( gsW, "Result text - gstp_Email: " + gstp_Email, 1, "lN", "text", gstp_Email );
+            wrk = g ( gsW, "Result text - Connect Account: " + gstp_Account, 1, "lN", "text", gstp_Account );
+            wrk = g ( gsW, "Result text - label Windows User: ", 1, "lN", "text", "Windows User:" );
+            wrk = g ( gsW, "Result text - label Auth User: ", 1, "lN", "text", "Auth User:" );
+            wrk = g ( gsW, "Result text - label Auth Name: ", 1, "lN", "text", "Auth Name:" );
 
             clickApply ();
             DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
