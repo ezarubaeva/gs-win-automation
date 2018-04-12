@@ -75,7 +75,6 @@ public class ToolsContextMenu extends Elem {
         }
         return new ProgramOptions();
     }
-
     public GoodSyncConnectWindow selectGSconnectSetup() throws Exception {
         try {
             goodsyncConnectSetup.click();
