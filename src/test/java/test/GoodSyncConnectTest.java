@@ -53,11 +53,12 @@ public class GoodSyncConnectTest {
 
     @Test
     public void setupLocalTest() throws Exception {
+        DElement gsC = null;
         try {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
-            sleep ( 1 );
             gsConnectWin.setupLocal ();
         } catch (Exception e) {
+            throw new Error ("Test: Error: Can not setup Local Mode");
         }
     }
 
@@ -67,6 +68,7 @@ public class GoodSyncConnectTest {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             gsConnectWin.setupExistingAccount ("test");
         } catch (Exception e) {
+            throw new Error ("Test: Error: Can not setup GSTP Mode for Existing Account");
         }
     }
 
@@ -76,6 +78,7 @@ public class GoodSyncConnectTest {
             gsConnectWin = mainWindow.clickToolsToolBarMenu().selectGSconnectSetup();
             gsConnectWin.setupNewAccount ( "test" );
         } catch (Exception e) {
+            throw new Error ("Error: Can not setup GSTP Mode for New Account");
         }
     }
 }
