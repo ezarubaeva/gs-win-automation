@@ -30,16 +30,22 @@ public class ApplicationRunHandler {
         }
 
         input.close();
-        return pidInfo.contains ("GoodSync-v10.exe");
+        return pidInfo.contains ("GoodSync-v10.exe") | pidInfo.contains ("gsync.exe") | pidInfo.contains ("gs-server.exe");
     }
 
     public void runGoodSyncApp() {
         int counter = 0;
 
         try {
-            while (isProcessRunning ()) {
+            if (isProcessRunning ()) {
                 Runtime.getRuntime().exec ("taskkill /F /IM GoodSync-v10.exe");
-                Runtime.getRuntime().exec ("taskkill /F /IM gs-runner.exe");
+                Runtime.getRuntime().exec ("taskkill /F /IM gs-server.exe");
+                Runtime.getRuntime().exec ("taskkill /F /IM gsync.exe");
+                sleep ( 1 );
+            }
+            while (isProcessRunning () && counter < 10) {
+                counter++;
+                sleep ( 1 );
             }
         } catch (Exception e){
             throw new Error("Error on killing GS process: " + e.getMessage());
@@ -63,6 +69,7 @@ public class ApplicationRunHandler {
         } catch (IOException e) {
             throw new Error("Error on copy jobs-groups-options.tic to %appdata% folder: " + e.getMessage());
         }*/
+        counter = 0;
         File gs = new File(pathToApp);
         if (!gs.exists() && !gs.isFile()){
             throw new Error("Can not find GoodSync executable file at path: " + pathToApp);
