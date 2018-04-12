@@ -119,7 +119,7 @@ public class GoodSyncConnectWindow extends Elem {
         }
     }
 
-    private public void chooseMode(String mode) throws Exception {
+    private void chooseMode(String mode) throws Exception {
         try {
             DElement wrk;
             DElement gsW = g ( gsWind, "setupExistingAccount: GoodSync Connect Setup window", 2, "n", "GoodSync Connect Setup" );
