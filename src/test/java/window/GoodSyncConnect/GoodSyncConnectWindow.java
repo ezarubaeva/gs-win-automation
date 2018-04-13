@@ -19,7 +19,7 @@ public class GoodSyncConnectWindow extends Elem {
     public GoodSyncConnectWindow() throws Exception {
         try {
             gsWind = g ( null, "GoodSync Main Window :", 3, "C", "{B26B00DA-2E5D-4CF2-83C5-911198C0F009}" );
-            gsW = g ( gsWind, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 3, "lN", "window", "GoodSync Connect Setup" );
+            gsW = g ( gsWind, "GoodSyncConnectWindow init: GoodSync Connect Setup window", 4, "lN", "window", "GoodSync Connect Setup" );
         } catch (Exception e) {
             throw new Error ( "Can not find GoodSyncConnectWindow in 3 sec" );
         }
@@ -95,8 +95,12 @@ public class GoodSyncConnectWindow extends Elem {
     }
 
     public void deleteGSAccount(String gsUser, String gsPassword) throws Exception {
-        WebDriver driverBrowser = new ChromeDriver ();
-        MediatorPage.deleteGSUser (driverBrowser, gsUser, gsPassword);
+        try {
+            WebDriver driverBrowser = new ChromeDriver ();
+            MediatorPage.deleteGSUser (driverBrowser, gsUser, gsPassword);
+        } catch (Exception e) {
+            throw new Error("deleteGSAccount: cannot delete Account");
+        }
     }
 
     public void clickNext() {
