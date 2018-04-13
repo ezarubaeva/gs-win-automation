@@ -60,14 +60,14 @@ public class GoodSyncConnectWindow extends Elem {
         clickNext ();
 
         // Do not change windows user for now
-        wrk = g ( gsW, "Edit: Windows Password", 2, "lN", "edit", "Windows User" );
+        wrk = g ( gsW, "Edit: Windows User", 3, "l", "edit");
         wrk.setEditValue (System.getProperty("user.name"));
         wrk = g ( gsW, "Edit: Windows Password", 1, "lN", "edit", "Windows Password" );
         wrk.setEditValue ( windowsPassword );
         clickNext ();
 
         sleep (1);
-        verifyServerMode("gs_qa" + tail, gsEmail);
+        verifyServerMode("gs_qa" + tail + "-siber-com", gsEmail);
 
         deleteGSAccount ( gsEmail, "testbot");
         } catch (Exception e) {
@@ -154,7 +154,7 @@ public class GoodSyncConnectWindow extends Elem {
             clickApply ();
             DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
         } catch (Exception e) {
-            e.printStackTrace ();
+            throw new Error("verifyServerMode: Account was not set up correctly);
         }
     }
 
