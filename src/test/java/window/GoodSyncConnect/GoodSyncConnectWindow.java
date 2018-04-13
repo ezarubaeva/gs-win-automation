@@ -152,9 +152,9 @@ public class GoodSyncConnectWindow extends Elem {
             wrk = g ( gsW, "Result text - label Auth Name: ", 1, "lN", "text", "Auth Name:" );
 
             clickApply ();
-            DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "Dn", "GoodSync Connect Setup" );
+            DElement.gimMeP ( null, "verifyServerMode: wait GoodSync Connect Setup to close", 4, "DN", "GoodSync Connect Setup" );
         } catch (Exception e) {
-            throw new Error("verifyServerMode: Account was not set up correctly);
+            throw new Error("verifyServerMode: Account was not set up correctly");
         }
     }
 
