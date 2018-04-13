@@ -32,8 +32,7 @@ public class MediatorPage {
             WebElement element = _webDriver.findElement(By.linkText ( "Delete User"));
             element.click();
         } catch (Exception e) {
-            log("User deletion failed: " + e.getMessage());
-            throw e;
+            throw new Error("User deletion failed");
         }
     }
 }
